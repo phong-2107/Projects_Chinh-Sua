@@ -6,20 +6,19 @@ namespace DAL.Entities
     using System.ComponentModel.DataAnnotations.Schema;
     using System.Data.Entity.Spatial;
 
-    [Table("PhieuNhapHang")]
-    public partial class PhieuNhapHang
+    [Table("PhieuNhap")]
+    public partial class PhieuNhap
     {
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
-        public PhieuNhapHang()
+        public PhieuNhap()
         {
             CT_MauXe = new HashSet<CT_MauXe>();
-            CT_PNhapPTVL = new HashSet<CT_PNhapPTVL>();
-            CT_PNhapXe = new HashSet<CT_PNhapXe>();
+            CT_PNhap = new HashSet<CT_PNhap>();
         }
 
         [Key]
         [StringLength(10)]
-        public string ID_NHAPHANG { get; set; }
+        public string IDPHIEUNHAP { get; set; }
 
         public DateTime NGAYLAP { get; set; }
 
@@ -36,10 +35,7 @@ namespace DAL.Entities
         public virtual ICollection<CT_MauXe> CT_MauXe { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_PNhapPTVL> CT_PNhapPTVL { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_PNhapXe> CT_PNhapXe { get; set; }
+        public virtual ICollection<CT_PNhap> CT_PNhap { get; set; }
 
         public virtual NhaCungCap NhaCungCap { get; set; }
 

@@ -12,20 +12,23 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MauSac()
         {
-            CT_MauXe = new HashSet<CT_MauXe>();
+            CT_AnhXe = new HashSet<CT_AnhXe>();
         }
 
         [Key]
-        [StringLength(10)]
+        [StringLength(4)]
         public string IDMAU { get; set; }
 
         [Required]
         [StringLength(20)]
         public string TENMAU { get; set; }
 
+        [StringLength(10)]
+        public string MARGB { get; set; }
+
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_MauXe> CT_MauXe { get; set; }
+        public virtual ICollection<CT_AnhXe> CT_AnhXe { get; set; }
     }
 }

@@ -1,4 +1,5 @@
-﻿using DevExpress.XtraSplashScreen;
+﻿using DAL.Entities;
+using DevExpress.XtraSplashScreen;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -15,7 +16,8 @@ namespace GUI
     {
 
         #region KHAI BÁO GIÁ TRI
-
+        private NhanVien dn = new NhanVien();
+        public NhanVien Dn { get => dn; set => dn = value; }
         #endregion
 
         #region MAIN
@@ -36,22 +38,21 @@ namespace GUI
             {
                 pnBaomat.Height = 210;
                 pnBaomatLon.Height = 240;
-                this.Height = 650;
+                this.Height = 550;
                 btnChinhSua.Text = "Đóng";
-                btnChinhSua.Location = new Point(625, 21);
-
+                btnChinhSua.Location = new Point(410, 21);
                 btnLuu.Visible = true;
-                btnLuu.Location = new Point(710, 21);
+                btnLuu.Location = new Point(700, 30);
             }
             else if (pnBaomat.Height >= 210 && pnBaomatLon.Height >= 240)
             {
                 pnBaomat.Height = 80;
                 pnBaomatLon.Height = 110;
-                this.Height = 550;
+                this.Height = 420;
                 btnChinhSua.Text = "Chỉnh sửa";
-                btnChinhSua.Location = new Point(710, 21);
+                btnChinhSua.Location = new Point(700, 30);
                 btnLuu.Visible = false;
-                btnLuu.Location = new Point(625, 21);
+                btnLuu.Location = new Point(580, 30);
             }
         }
         private void btnExit_Click(object sender, EventArgs e)
@@ -69,5 +70,10 @@ namespace GUI
         }
 
         #endregion
+
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

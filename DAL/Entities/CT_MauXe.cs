@@ -11,7 +11,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CT_MauXe()
         {
-            CT_GiaoHang = new HashSet<CT_GiaoHang>();
+            HopDongs = new HashSet<HopDong>();
         }
 
         [Key]
@@ -28,33 +28,19 @@ namespace DAL.Entities
 
         [Required]
         [StringLength(10)]
-        public string ID_NHAPHANG { get; set; }
+        public string IDPHIEUNHAP { get; set; }
 
         [Required]
-        [StringLength(100)]
-        public string CT_ANHXE { get; set; }
-
-        [Required]
-        [StringLength(50)]
-        public string TINHTRANG { get; set; }
-
-        [Required]
-        [StringLength(10)]
+        [StringLength(4)]
         public string IDMAU { get; set; }
-
-        [Required]
-        [StringLength(5)]
-        public string IDVITRI { get; set; }
 
         public bool ACTIVE { get; set; }
 
+        public virtual CT_AnhXe CT_AnhXe { get; set; }
+
+        public virtual PhieuNhap PhieuNhap { get; set; }
+
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_GiaoHang> CT_GiaoHang { get; set; }
-
-        public virtual MapKhoChua MapKhoChua { get; set; }
-
-        public virtual MauSac MauSac { get; set; }
-
-        public virtual PhieuNhapHang PhieuNhapHang { get; set; }
+        public virtual ICollection<HopDong> HopDongs { get; set; }
     }
 }

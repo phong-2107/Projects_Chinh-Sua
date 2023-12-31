@@ -12,9 +12,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HangSX()
         {
-            CT_KMai = new HashSet<CT_KMai>();
             MauXes = new HashSet<MauXe>();
-            PhuTung_VatLieu = new HashSet<PhuTung_VatLieu>();
         }
 
         [Key]
@@ -32,12 +30,6 @@ namespace DAL.Entities
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_KMai> CT_KMai { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<MauXe> MauXes { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhuTung_VatLieu> PhuTung_VatLieu { get; set; }
     }
 }

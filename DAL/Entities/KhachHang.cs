@@ -12,8 +12,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public KhachHang()
         {
-            HopDongDichVus = new HashSet<HopDongDichVu>();
-            PhieuDoiTras = new HashSet<PhieuDoiTra>();
+            HopDongs = new HashSet<HopDong>();
         }
 
         [Key]
@@ -26,21 +25,12 @@ namespace DAL.Entities
         [StringLength(10)]
         public string SDT { get; set; }
 
-        [StringLength(12)]
-        public string IDCCCD { get; set; }
-
         [StringLength(100)]
         public string DIACHI { get; set; }
-
-        [StringLength(30)]
-        public string EMAIL { get; set; }
 
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HopDongDichVu> HopDongDichVus { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuDoiTra> PhieuDoiTras { get; set; }
+        public virtual ICollection<HopDong> HopDongs { get; set; }
     }
 }

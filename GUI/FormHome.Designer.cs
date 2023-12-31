@@ -56,8 +56,6 @@
             this.btnTongQuan = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement2 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnProduct = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnColors = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.btnPhuTung = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement14 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
@@ -129,6 +127,8 @@
             this.toolStripMenuItem13 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
+            this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnColors = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Siderbar.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -208,9 +208,10 @@
             // 
             this.Siderbar.Controls.Add(this.gunaPanel2);
             this.Siderbar.Dock = System.Windows.Forms.DockStyle.Top;
-            this.Siderbar.Location = new System.Drawing.Point(224, 0);
+            this.Siderbar.Location = new System.Drawing.Point(261, 0);
+            this.Siderbar.Margin = new System.Windows.Forms.Padding(4);
             this.Siderbar.Name = "Siderbar";
-            this.Siderbar.Size = new System.Drawing.Size(1694, 44);
+            this.Siderbar.Size = new System.Drawing.Size(1679, 54);
             this.Siderbar.TabIndex = 16;
             // 
             // gunaPanel2
@@ -223,9 +224,10 @@
             this.gunaPanel2.Controls.Add(this.pnaccount);
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel2.Name = "gunaPanel2";
             this.gunaPanel2.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.gunaPanel2.Size = new System.Drawing.Size(1694, 44);
+            this.gunaPanel2.Size = new System.Drawing.Size(1679, 54);
             this.gunaPanel2.TabIndex = 0;
             // 
             // gunaPanel1
@@ -233,10 +235,11 @@
             this.gunaPanel1.BackColor = System.Drawing.Color.White;
             this.gunaPanel1.Controls.Add(this.btnHoTro);
             this.gunaPanel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaPanel1.Location = new System.Drawing.Point(1328, 0);
+            this.gunaPanel1.Location = new System.Drawing.Point(1252, 0);
+            this.gunaPanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel1.Name = "gunaPanel1";
-            this.gunaPanel1.Padding = new System.Windows.Forms.Padding(7, 3, 7, 3);
-            this.gunaPanel1.Size = new System.Drawing.Size(114, 44);
+            this.gunaPanel1.Padding = new System.Windows.Forms.Padding(8, 4, 8, 4);
+            this.gunaPanel1.Size = new System.Drawing.Size(133, 54);
             this.gunaPanel1.TabIndex = 10;
             // 
             // btnHoTro
@@ -254,7 +257,7 @@
             this.btnHoTro.ForeColor = System.Drawing.Color.Gray;
             this.btnHoTro.Image = ((System.Drawing.Image)(resources.GetObject("btnHoTro.Image")));
             this.btnHoTro.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnHoTro.Location = new System.Drawing.Point(7, 3);
+            this.btnHoTro.Location = new System.Drawing.Point(8, 4);
             this.btnHoTro.Margin = new System.Windows.Forms.Padding(0);
             this.btnHoTro.Name = "btnHoTro";
             this.btnHoTro.OnHoverBaseColor = System.Drawing.Color.LightGray;
@@ -263,7 +266,7 @@
             this.btnHoTro.OnHoverImage = null;
             this.btnHoTro.OnPressedColor = System.Drawing.Color.Black;
             this.btnHoTro.Radius = 5;
-            this.btnHoTro.Size = new System.Drawing.Size(100, 38);
+            this.btnHoTro.Size = new System.Drawing.Size(117, 46);
             this.btnHoTro.TabIndex = 9;
             this.btnHoTro.Text = "Hỗ trợ";
             this.btnHoTro.TextAlign = System.Windows.Forms.HorizontalAlignment.Right;
@@ -273,11 +276,11 @@
             this.gunaPanel14.Controls.Add(this.gunaElipsePanel1);
             this.gunaPanel14.Controls.Add(this.label1);
             this.gunaPanel14.Dock = System.Windows.Forms.DockStyle.Right;
-            this.gunaPanel14.Location = new System.Drawing.Point(1442, 0);
+            this.gunaPanel14.Location = new System.Drawing.Point(1385, 0);
             this.gunaPanel14.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel14.Name = "gunaPanel14";
-            this.gunaPanel14.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPanel14.Size = new System.Drawing.Size(49, 44);
+            this.gunaPanel14.Padding = new System.Windows.Forms.Padding(4);
+            this.gunaPanel14.Size = new System.Drawing.Size(57, 54);
             this.gunaPanel14.TabIndex = 10;
             // 
             // gunaElipsePanel1
@@ -285,9 +288,10 @@
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.Controls.Add(this.gunaButton1);
-            this.gunaElipsePanel1.Location = new System.Drawing.Point(6, 8);
+            this.gunaElipsePanel1.Location = new System.Drawing.Point(7, 10);
+            this.gunaElipsePanel1.Margin = new System.Windows.Forms.Padding(4);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(30, 30);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(35, 37);
             this.gunaElipsePanel1.TabIndex = 11;
             // 
             // gunaButton1
@@ -315,7 +319,7 @@
             this.gunaButton1.OnHoverImage = null;
             this.gunaButton1.OnPressedColor = System.Drawing.Color.Black;
             this.gunaButton1.Radius = 4;
-            this.gunaButton1.Size = new System.Drawing.Size(30, 30);
+            this.gunaButton1.Size = new System.Drawing.Size(35, 37);
             this.gunaButton1.TabIndex = 1;
             // 
             // label1
@@ -323,9 +327,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.IndianRed;
-            this.label1.Location = new System.Drawing.Point(35, 2);
+            this.label1.Location = new System.Drawing.Point(41, 2);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 13);
+            this.label1.Size = new System.Drawing.Size(17, 17);
             this.label1.TabIndex = 9;
             this.label1.Text = "0";
             // 
@@ -333,10 +338,11 @@
             // 
             this.panel1.Controls.Add(this.btnCaiDat);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Right;
-            this.panel1.Location = new System.Drawing.Point(1491, 0);
+            this.panel1.Location = new System.Drawing.Point(1442, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4);
             this.panel1.Name = "panel1";
-            this.panel1.Padding = new System.Windows.Forms.Padding(4);
-            this.panel1.Size = new System.Drawing.Size(44, 44);
+            this.panel1.Padding = new System.Windows.Forms.Padding(5);
+            this.panel1.Size = new System.Drawing.Size(51, 54);
             this.panel1.TabIndex = 11;
             // 
             // btnCaiDat
@@ -355,8 +361,8 @@
             this.btnCaiDat.Image = ((System.Drawing.Image)(resources.GetObject("btnCaiDat.Image")));
             this.btnCaiDat.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnCaiDat.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnCaiDat.Location = new System.Drawing.Point(4, 4);
-            this.btnCaiDat.Margin = new System.Windows.Forms.Padding(5);
+            this.btnCaiDat.Location = new System.Drawing.Point(5, 5);
+            this.btnCaiDat.Margin = new System.Windows.Forms.Padding(6);
             this.btnCaiDat.Name = "btnCaiDat";
             this.btnCaiDat.OnHoverBaseColor = System.Drawing.Color.Silver;
             this.btnCaiDat.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -364,7 +370,7 @@
             this.btnCaiDat.OnHoverImage = null;
             this.btnCaiDat.OnPressedColor = System.Drawing.Color.Black;
             this.btnCaiDat.Radius = 4;
-            this.btnCaiDat.Size = new System.Drawing.Size(36, 36);
+            this.btnCaiDat.Size = new System.Drawing.Size(41, 44);
             this.btnCaiDat.TabIndex = 0;
             this.btnCaiDat.Click += new System.EventHandler(this.btnCaiDat_Click);
             // 
@@ -373,9 +379,10 @@
             this.gunaPanel4.Controls.Add(this.gunaPictureBox2);
             this.gunaPanel4.Dock = System.Windows.Forms.DockStyle.Left;
             this.gunaPanel4.Location = new System.Drawing.Point(0, 0);
+            this.gunaPanel4.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPanel4.Name = "gunaPanel4";
-            this.gunaPanel4.Padding = new System.Windows.Forms.Padding(5);
-            this.gunaPanel4.Size = new System.Drawing.Size(183, 44);
+            this.gunaPanel4.Padding = new System.Windows.Forms.Padding(6);
+            this.gunaPanel4.Size = new System.Drawing.Size(214, 54);
             this.gunaPanel4.TabIndex = 0;
             // 
             // gunaPictureBox2
@@ -383,9 +390,10 @@
             this.gunaPictureBox2.BaseColor = System.Drawing.Color.White;
             this.gunaPictureBox2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPictureBox2.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox2.Image")));
-            this.gunaPictureBox2.Location = new System.Drawing.Point(5, 5);
+            this.gunaPictureBox2.Location = new System.Drawing.Point(6, 6);
+            this.gunaPictureBox2.Margin = new System.Windows.Forms.Padding(4);
             this.gunaPictureBox2.Name = "gunaPictureBox2";
-            this.gunaPictureBox2.Size = new System.Drawing.Size(173, 34);
+            this.gunaPictureBox2.Size = new System.Drawing.Size(202, 42);
             this.gunaPictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.gunaPictureBox2.TabIndex = 1;
             this.gunaPictureBox2.TabStop = false;
@@ -394,10 +402,11 @@
             // 
             this.pnaccount.Controls.Add(this.btnAccount);
             this.pnaccount.Dock = System.Windows.Forms.DockStyle.Right;
-            this.pnaccount.Location = new System.Drawing.Point(1535, 0);
+            this.pnaccount.Location = new System.Drawing.Point(1493, 0);
+            this.pnaccount.Margin = new System.Windows.Forms.Padding(4);
             this.pnaccount.Name = "pnaccount";
-            this.pnaccount.Padding = new System.Windows.Forms.Padding(5, 2, 5, 2);
-            this.pnaccount.Size = new System.Drawing.Size(159, 44);
+            this.pnaccount.Padding = new System.Windows.Forms.Padding(6, 2, 6, 2);
+            this.pnaccount.Size = new System.Drawing.Size(186, 54);
             this.pnaccount.TabIndex = 9;
             // 
             // btnAccount
@@ -416,7 +425,7 @@
             this.btnAccount.Image = ((System.Drawing.Image)(resources.GetObject("btnAccount.Image")));
             this.btnAccount.ImageAlign = System.Windows.Forms.HorizontalAlignment.Right;
             this.btnAccount.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnAccount.Location = new System.Drawing.Point(5, 2);
+            this.btnAccount.Location = new System.Drawing.Point(6, 2);
             this.btnAccount.Margin = new System.Windows.Forms.Padding(0);
             this.btnAccount.Name = "btnAccount";
             this.btnAccount.OnHoverBaseColor = System.Drawing.Color.WhiteSmoke;
@@ -425,7 +434,7 @@
             this.btnAccount.OnHoverImage = null;
             this.btnAccount.OnPressedColor = System.Drawing.Color.Black;
             this.btnAccount.Radius = 5;
-            this.btnAccount.Size = new System.Drawing.Size(149, 40);
+            this.btnAccount.Size = new System.Drawing.Size(174, 50);
             this.btnAccount.TabIndex = 8;
             this.btnAccount.Text = "Anonymous";
             this.btnAccount.Click += new System.EventHandler(this.btnAccount_Click);
@@ -479,11 +488,12 @@
             this.Taskbar.HtmlTemplates.HamburgerHeaderPanel.Template = "<div class=\'button-glow\'></div>";
             this.Taskbar.ItemHeight = 40;
             this.Taskbar.Location = new System.Drawing.Point(0, 0);
+            this.Taskbar.Margin = new System.Windows.Forms.Padding(4);
             this.Taskbar.Name = "Taskbar";
             this.Taskbar.OptionsMinimizing.AllowMinimizeMode = DevExpress.Utils.DefaultBoolean.True;
             this.Taskbar.ScrollBarMode = DevExpress.XtraBars.Navigation.ScrollBarMode.Touch;
             this.Taskbar.ShowFilterControl = DevExpress.XtraBars.Navigation.ShowFilterControl.Always;
-            this.Taskbar.Size = new System.Drawing.Size(224, 1028);
+            this.Taskbar.Size = new System.Drawing.Size(261, 1062);
             this.Taskbar.TabIndex = 15;
             this.Taskbar.ViewType = DevExpress.XtraBars.Navigation.AccordionControlViewType.HamburgerMenu;
             // 
@@ -508,6 +518,7 @@
             this.accordionControlElement2.Appearance.Hovered.Options.UseFont = true;
             this.accordionControlElement2.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.btnProduct,
+            this.btnColors,
             this.accordionControlElement14,
             this.accordionControlElement15,
             this.accordionControlElement16});
@@ -520,31 +531,10 @@
             // 
             this.btnProduct.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnProduct.Appearance.Default.Options.UseFont = true;
-            this.btnProduct.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.btnColors,
-            this.btnPhuTung});
-            this.btnProduct.Expanded = true;
             this.btnProduct.Name = "btnProduct";
+            this.btnProduct.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.btnProduct.Text = "Sản phẩm";
             this.btnProduct.Click += new System.EventHandler(this.btnSanPhamItems_Click);
-            // 
-            // btnColors
-            // 
-            this.btnColors.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnColors.Appearance.Default.Options.UseFont = true;
-            this.btnColors.Name = "btnColors";
-            this.btnColors.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnColors.Text = "Màu Sắc";
-            this.btnColors.Click += new System.EventHandler(this.btnColors_Click);
-            // 
-            // btnPhuTung
-            // 
-            this.btnPhuTung.Appearance.Default.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhuTung.Appearance.Default.Options.UseFont = true;
-            this.btnPhuTung.Name = "btnPhuTung";
-            this.btnPhuTung.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.btnPhuTung.Text = "Phụ tùng";
-            this.btnPhuTung.Click += new System.EventHandler(this.btnPhuTung_Click);
             // 
             // accordionControlElement14
             // 
@@ -696,9 +686,10 @@
             // panelMain
             // 
             this.panelMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panelMain.Location = new System.Drawing.Point(224, 44);
+            this.panelMain.Location = new System.Drawing.Point(261, 54);
+            this.panelMain.Margin = new System.Windows.Forms.Padding(4);
             this.panelMain.Name = "panelMain";
-            this.panelMain.Size = new System.Drawing.Size(1694, 984);
+            this.panelMain.Size = new System.Drawing.Size(1679, 1008);
             this.panelMain.TabIndex = 17;
             // 
             // SanPham
@@ -725,7 +716,7 @@
             this.SanPham.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.SanPham.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.SanPham.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.SanPham.Size = new System.Drawing.Size(198, 232);
+            this.SanPham.Size = new System.Drawing.Size(232, 268);
             // 
             // btnSanPhamItems
             // 
@@ -733,7 +724,7 @@
             this.btnSanPhamItems.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSanPhamItems.Name = "btnSanPhamItems";
             this.btnSanPhamItems.Padding = new System.Windows.Forms.Padding(7);
-            this.btnSanPhamItems.Size = new System.Drawing.Size(211, 38);
+            this.btnSanPhamItems.Size = new System.Drawing.Size(245, 44);
             this.btnSanPhamItems.Text = "     Sản Phẩm";
             // 
             // tồnKhoToolStripMenuItem
@@ -741,7 +732,7 @@
             this.tồnKhoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tồnKhoToolStripMenuItem.Image")));
             this.tồnKhoToolStripMenuItem.Name = "tồnKhoToolStripMenuItem";
             this.tồnKhoToolStripMenuItem.Padding = new System.Windows.Forms.Padding(7);
-            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(245, 44);
             this.tồnKhoToolStripMenuItem.Text = "     Tồn Kho";
             // 
             // lôSảnPhẩmToolStripMenuItem
@@ -749,7 +740,7 @@
             this.lôSảnPhẩmToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lôSảnPhẩmToolStripMenuItem.Image")));
             this.lôSảnPhẩmToolStripMenuItem.Name = "lôSảnPhẩmToolStripMenuItem";
             this.lôSảnPhẩmToolStripMenuItem.Padding = new System.Windows.Forms.Padding(7);
-            this.lôSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.lôSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(245, 44);
             this.lôSảnPhẩmToolStripMenuItem.Text = "     Lô sản phẩm";
             // 
             // thươngHiệuToolStripMenuItem
@@ -757,7 +748,7 @@
             this.thươngHiệuToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("thươngHiệuToolStripMenuItem.Image")));
             this.thươngHiệuToolStripMenuItem.Name = "thươngHiệuToolStripMenuItem";
             this.thươngHiệuToolStripMenuItem.Padding = new System.Windows.Forms.Padding(7);
-            this.thươngHiệuToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.thươngHiệuToolStripMenuItem.Size = new System.Drawing.Size(245, 44);
             this.thươngHiệuToolStripMenuItem.Text = "     Thương hiệu";
             // 
             // danhMụcToolStripMenuItem
@@ -765,7 +756,7 @@
             this.danhMụcToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("danhMụcToolStripMenuItem.Image")));
             this.danhMụcToolStripMenuItem.Name = "danhMụcToolStripMenuItem";
             this.danhMụcToolStripMenuItem.Padding = new System.Windows.Forms.Padding(7);
-            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.danhMụcToolStripMenuItem.Size = new System.Drawing.Size(245, 44);
             this.danhMụcToolStripMenuItem.Text = "     Danh mục";
             // 
             // nhàCungCấpToolStripMenuItem
@@ -773,7 +764,7 @@
             this.nhàCungCấpToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("nhàCungCấpToolStripMenuItem.Image")));
             this.nhàCungCấpToolStripMenuItem.Name = "nhàCungCấpToolStripMenuItem";
             this.nhàCungCấpToolStripMenuItem.Padding = new System.Windows.Forms.Padding(7);
-            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(211, 38);
+            this.nhàCungCấpToolStripMenuItem.Size = new System.Drawing.Size(245, 44);
             this.nhàCungCấpToolStripMenuItem.Text = "     Nhà cung cấp";
             // 
             // KhoHang
@@ -798,7 +789,7 @@
             this.KhoHang.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.KhoHang.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.KhoHang.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            this.KhoHang.Size = new System.Drawing.Size(203, 208);
+            this.KhoHang.Size = new System.Drawing.Size(239, 244);
             // 
             // XuatNhapKho
             // 
@@ -806,7 +797,7 @@
             this.XuatNhapKho.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.XuatNhapKho.Name = "XuatNhapKho";
             this.XuatNhapKho.Padding = new System.Windows.Forms.Padding(5);
-            this.XuatNhapKho.Size = new System.Drawing.Size(212, 34);
+            this.XuatNhapKho.Size = new System.Drawing.Size(248, 40);
             this.XuatNhapKho.Text = "     Xuất nhập kho";
             // 
             // toolStripMenuItem2
@@ -814,7 +805,7 @@
             this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
             this.toolStripMenuItem2.Name = "toolStripMenuItem2";
             this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(212, 34);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(248, 40);
             this.toolStripMenuItem2.Text = "     Kiểm kho";
             // 
             // toolStripMenuItem3
@@ -822,7 +813,7 @@
             this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
             this.toolStripMenuItem3.Name = "toolStripMenuItem3";
             this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(212, 34);
+            this.toolStripMenuItem3.Size = new System.Drawing.Size(248, 40);
             this.toolStripMenuItem3.Text = "     Tồn Kho";
             // 
             // toolStripMenuItem4
@@ -830,7 +821,7 @@
             this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
             this.toolStripMenuItem4.Name = "toolStripMenuItem4";
             this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(212, 34);
+            this.toolStripMenuItem4.Size = new System.Drawing.Size(248, 40);
             this.toolStripMenuItem4.Text = "     Thương hiệu";
             // 
             // toolStripMenuItem5
@@ -838,7 +829,7 @@
             this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
             this.toolStripMenuItem5.Name = "toolStripMenuItem5";
             this.toolStripMenuItem5.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(212, 34);
+            this.toolStripMenuItem5.Size = new System.Drawing.Size(248, 40);
             this.toolStripMenuItem5.Text = "     Danh mục";
             // 
             // toolStripMenuItem6
@@ -846,7 +837,7 @@
             this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
             this.toolStripMenuItem6.Name = "toolStripMenuItem6";
             this.toolStripMenuItem6.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(212, 34);
+            this.toolStripMenuItem6.Size = new System.Drawing.Size(248, 40);
             this.toolStripMenuItem6.Text = "     Nhà cung cấp";
             // 
             // BanHang
@@ -870,7 +861,7 @@
             this.BanHang.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.BanHang.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.BanHang.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.BanHang.Size = new System.Drawing.Size(191, 140);
+            this.BanHang.Size = new System.Drawing.Size(222, 164);
             // 
             // SearchHD
             // 
@@ -878,7 +869,7 @@
             this.SearchHD.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SearchHD.Name = "SearchHD";
             this.SearchHD.Padding = new System.Windows.Forms.Padding(5);
-            this.SearchHD.Size = new System.Drawing.Size(200, 34);
+            this.SearchHD.Size = new System.Drawing.Size(231, 40);
             this.SearchHD.Text = "     Tìm hóa đơn";
             // 
             // banle
@@ -886,7 +877,7 @@
             this.banle.Image = ((System.Drawing.Image)(resources.GetObject("banle.Image")));
             this.banle.Name = "banle";
             this.banle.Padding = new System.Windows.Forms.Padding(5);
-            this.banle.Size = new System.Drawing.Size(200, 34);
+            this.banle.Size = new System.Drawing.Size(231, 40);
             this.banle.Text = "     Bán Lẻ";
             // 
             // bansi
@@ -894,7 +885,7 @@
             this.bansi.Image = ((System.Drawing.Image)(resources.GetObject("bansi.Image")));
             this.bansi.Name = "bansi";
             this.bansi.Padding = new System.Windows.Forms.Padding(5);
-            this.bansi.Size = new System.Drawing.Size(200, 34);
+            this.bansi.Size = new System.Drawing.Size(231, 40);
             this.bansi.Text = "     Bán Sỉ";
             // 
             // trahang
@@ -902,7 +893,7 @@
             this.trahang.Image = ((System.Drawing.Image)(resources.GetObject("trahang.Image")));
             this.trahang.Name = "trahang";
             this.trahang.Padding = new System.Windows.Forms.Padding(5);
-            this.trahang.Size = new System.Drawing.Size(200, 34);
+            this.trahang.Size = new System.Drawing.Size(231, 40);
             this.trahang.Text = "     Trả hàng";
             // 
             // account
@@ -925,7 +916,7 @@
             this.account.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.account.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.account.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.account.Size = new System.Drawing.Size(200, 136);
+            this.account.Size = new System.Drawing.Size(203, 154);
             // 
             // btnAccountItem
             // 
@@ -934,7 +925,7 @@
             this.btnAccountItem.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnAccountItem.Name = "btnAccountItem";
             this.btnAccountItem.Padding = new System.Windows.Forms.Padding(10);
-            this.btnAccountItem.Size = new System.Drawing.Size(194, 44);
+            this.btnAccountItem.Size = new System.Drawing.Size(222, 50);
             this.btnAccountItem.Text = "     Tài khoản";
             this.btnAccountItem.Click += new System.EventHandler(this.btnAccountItem_Click);
             // 
@@ -944,7 +935,7 @@
             this.FormBanHang.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.FormBanHang.Name = "FormBanHang";
             this.FormBanHang.Padding = new System.Windows.Forms.Padding(10);
-            this.FormBanHang.Size = new System.Drawing.Size(194, 44);
+            this.FormBanHang.Size = new System.Drawing.Size(222, 50);
             this.FormBanHang.Text = "     Bán hàng";
             this.FormBanHang.Click += new System.EventHandler(this.FormBanHang_Click);
             // 
@@ -955,7 +946,7 @@
             this.btnExit.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
             this.btnExit.Name = "btnExit";
             this.btnExit.Padding = new System.Windows.Forms.Padding(10);
-            this.btnExit.Size = new System.Drawing.Size(194, 44);
+            this.btnExit.Size = new System.Drawing.Size(222, 50);
             this.btnExit.Text = "     Đăng xuất";
             this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
             // 
@@ -980,7 +971,7 @@
             this.addNew.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.addNew.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.addNew.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.addNew.Size = new System.Drawing.Size(180, 174);
+            this.addNew.Size = new System.Drawing.Size(209, 204);
             // 
             // btnSanPham
             // 
@@ -988,7 +979,7 @@
             this.btnSanPham.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnSanPham.Name = "btnSanPham";
             this.btnSanPham.Padding = new System.Windows.Forms.Padding(5);
-            this.btnSanPham.Size = new System.Drawing.Size(189, 34);
+            this.btnSanPham.Size = new System.Drawing.Size(218, 40);
             this.btnSanPham.Text = "     Sản Phẩm";
             // 
             // btnDonHang
@@ -996,7 +987,7 @@
             this.btnDonHang.Image = ((System.Drawing.Image)(resources.GetObject("btnDonHang.Image")));
             this.btnDonHang.Name = "btnDonHang";
             this.btnDonHang.Padding = new System.Windows.Forms.Padding(5);
-            this.btnDonHang.Size = new System.Drawing.Size(189, 34);
+            this.btnDonHang.Size = new System.Drawing.Size(218, 40);
             this.btnDonHang.Text = "     Đơn hàng";
             // 
             // btnInvoice
@@ -1004,7 +995,7 @@
             this.btnInvoice.Image = ((System.Drawing.Image)(resources.GetObject("btnInvoice.Image")));
             this.btnInvoice.Name = "btnInvoice";
             this.btnInvoice.Padding = new System.Windows.Forms.Padding(5);
-            this.btnInvoice.Size = new System.Drawing.Size(189, 34);
+            this.btnInvoice.Size = new System.Drawing.Size(218, 40);
             this.btnInvoice.Text = "     Hóa Đơn";
             // 
             // btnExport
@@ -1012,7 +1003,7 @@
             this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.Name = "btnExport";
             this.btnExport.Padding = new System.Windows.Forms.Padding(5);
-            this.btnExport.Size = new System.Drawing.Size(189, 34);
+            this.btnExport.Size = new System.Drawing.Size(218, 40);
             this.btnExport.Text = "     Nhập hàng";
             // 
             // btnExcel
@@ -1020,7 +1011,7 @@
             this.btnExcel.Image = ((System.Drawing.Image)(resources.GetObject("btnExcel.Image")));
             this.btnExcel.Name = "btnExcel";
             this.btnExcel.Padding = new System.Windows.Forms.Padding(5);
-            this.btnExcel.Size = new System.Drawing.Size(189, 34);
+            this.btnExcel.Size = new System.Drawing.Size(218, 40);
             this.btnExcel.Text = "     Nhập Excel";
             // 
             // Donhang
@@ -1043,7 +1034,7 @@
             this.Donhang.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Donhang.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Donhang.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Donhang.Size = new System.Drawing.Size(200, 140);
+            this.Donhang.Size = new System.Drawing.Size(233, 164);
             // 
             // searchInvoice
             // 
@@ -1051,7 +1042,7 @@
             this.searchInvoice.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.searchInvoice.Name = "searchInvoice";
             this.searchInvoice.Padding = new System.Windows.Forms.Padding(5);
-            this.searchInvoice.Size = new System.Drawing.Size(209, 34);
+            this.searchInvoice.Size = new System.Drawing.Size(242, 40);
             this.searchInvoice.Text = "     Tìm đơn hàng";
             // 
             // btnDon
@@ -1059,7 +1050,7 @@
             this.btnDon.Image = ((System.Drawing.Image)(resources.GetObject("btnDon.Image")));
             this.btnDon.Name = "btnDon";
             this.btnDon.Padding = new System.Windows.Forms.Padding(5);
-            this.btnDon.Size = new System.Drawing.Size(209, 34);
+            this.btnDon.Size = new System.Drawing.Size(242, 40);
             this.btnDon.Text = "     Đơn hàng";
             // 
             // btnKhieuNai
@@ -1067,7 +1058,7 @@
             this.btnKhieuNai.Image = ((System.Drawing.Image)(resources.GetObject("btnKhieuNai.Image")));
             this.btnKhieuNai.Name = "btnKhieuNai";
             this.btnKhieuNai.Padding = new System.Windows.Forms.Padding(5);
-            this.btnKhieuNai.Size = new System.Drawing.Size(209, 34);
+            this.btnKhieuNai.Size = new System.Drawing.Size(242, 40);
             this.btnKhieuNai.Text = "     Khiếu nại";
             // 
             // btnDonxoa
@@ -1075,7 +1066,7 @@
             this.btnDonxoa.Image = ((System.Drawing.Image)(resources.GetObject("btnDonxoa.Image")));
             this.btnDonxoa.Name = "btnDonxoa";
             this.btnDonxoa.Padding = new System.Windows.Forms.Padding(5);
-            this.btnDonxoa.Size = new System.Drawing.Size(209, 34);
+            this.btnDonxoa.Size = new System.Drawing.Size(242, 40);
             this.btnDonxoa.Text = "     Đơn đã xóa";
             // 
             // Khachhang
@@ -1097,14 +1088,14 @@
             this.Khachhang.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Khachhang.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Khachhang.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Khachhang.Size = new System.Drawing.Size(260, 106);
+            this.Khachhang.Size = new System.Drawing.Size(309, 124);
             // 
             // btnSearchKH
             // 
             this.btnSearchKH.Image = ((System.Drawing.Image)(resources.GetObject("btnSearchKH.Image")));
             this.btnSearchKH.Name = "btnSearchKH";
             this.btnSearchKH.Padding = new System.Windows.Forms.Padding(5);
-            this.btnSearchKH.Size = new System.Drawing.Size(269, 34);
+            this.btnSearchKH.Size = new System.Drawing.Size(318, 40);
             this.btnSearchKH.Text = "     Tìm khách hàng";
             // 
             // btnCustomer
@@ -1113,7 +1104,7 @@
             this.btnCustomer.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnCustomer.Name = "btnCustomer";
             this.btnCustomer.Padding = new System.Windows.Forms.Padding(5);
-            this.btnCustomer.Size = new System.Drawing.Size(269, 34);
+            this.btnCustomer.Size = new System.Drawing.Size(318, 40);
             this.btnCustomer.Text = "     Khách hàng";
             // 
             // btnCare
@@ -1121,7 +1112,7 @@
             this.btnCare.Image = ((System.Drawing.Image)(resources.GetObject("btnCare.Image")));
             this.btnCare.Name = "btnCare";
             this.btnCare.Padding = new System.Windows.Forms.Padding(5);
-            this.btnCare.Size = new System.Drawing.Size(269, 34);
+            this.btnCare.Size = new System.Drawing.Size(318, 40);
             this.btnCare.Text = "     Chăm Sóc Khách Hàng";
             // 
             // Baocao
@@ -1146,14 +1137,14 @@
             this.Baocao.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Baocao.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Baocao.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Baocao.Size = new System.Drawing.Size(186, 208);
+            this.Baocao.Size = new System.Drawing.Size(217, 244);
             // 
             // DoanhThu
             // 
             this.DoanhThu.Image = ((System.Drawing.Image)(resources.GetObject("DoanhThu.Image")));
             this.DoanhThu.Name = "DoanhThu";
             this.DoanhThu.Padding = new System.Windows.Forms.Padding(5);
-            this.DoanhThu.Size = new System.Drawing.Size(195, 34);
+            this.DoanhThu.Size = new System.Drawing.Size(226, 40);
             this.DoanhThu.Text = "     Doanh thu";
             // 
             // btnDonhangs
@@ -1162,7 +1153,7 @@
             this.btnDonhangs.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btnDonhangs.Name = "btnDonhangs";
             this.btnDonhangs.Padding = new System.Windows.Forms.Padding(5);
-            this.btnDonhangs.Size = new System.Drawing.Size(195, 34);
+            this.btnDonhangs.Size = new System.Drawing.Size(226, 40);
             this.btnDonhangs.Text = "     Đơn hàng";
             // 
             // btnDetail
@@ -1170,7 +1161,7 @@
             this.btnDetail.Image = ((System.Drawing.Image)(resources.GetObject("btnDetail.Image")));
             this.btnDetail.Name = "btnDetail";
             this.btnDetail.Padding = new System.Windows.Forms.Padding(5);
-            this.btnDetail.Size = new System.Drawing.Size(195, 34);
+            this.btnDetail.Size = new System.Drawing.Size(226, 40);
             this.btnDetail.Text = "     Bán lẻ";
             // 
             // btnTonkho
@@ -1178,7 +1169,7 @@
             this.btnTonkho.Image = ((System.Drawing.Image)(resources.GetObject("btnTonkho.Image")));
             this.btnTonkho.Name = "btnTonkho";
             this.btnTonkho.Padding = new System.Windows.Forms.Padding(5);
-            this.btnTonkho.Size = new System.Drawing.Size(195, 34);
+            this.btnTonkho.Size = new System.Drawing.Size(226, 40);
             this.btnTonkho.Text = "     Tồn kho";
             // 
             // btnKH
@@ -1186,7 +1177,7 @@
             this.btnKH.Image = ((System.Drawing.Image)(resources.GetObject("btnKH.Image")));
             this.btnKH.Name = "btnKH";
             this.btnKH.Padding = new System.Windows.Forms.Padding(5);
-            this.btnKH.Size = new System.Drawing.Size(195, 34);
+            this.btnKH.Size = new System.Drawing.Size(226, 40);
             this.btnKH.Text = "     Khách Hàng";
             // 
             // btnsanphams
@@ -1194,7 +1185,7 @@
             this.btnsanphams.Image = ((System.Drawing.Image)(resources.GetObject("btnsanphams.Image")));
             this.btnsanphams.Name = "btnsanphams";
             this.btnsanphams.Padding = new System.Windows.Forms.Padding(5);
-            this.btnsanphams.Size = new System.Drawing.Size(195, 34);
+            this.btnsanphams.Size = new System.Drawing.Size(226, 40);
             this.btnsanphams.Text = "     Sản Phẩm";
             // 
             // Khuyenmai
@@ -1216,14 +1207,14 @@
             this.Khuyenmai.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Khuyenmai.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Khuyenmai.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Khuyenmai.Size = new System.Drawing.Size(177, 106);
+            this.Khuyenmai.Size = new System.Drawing.Size(204, 124);
             // 
             // toolStripMenuItem9
             // 
             this.toolStripMenuItem9.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem9.Image")));
             this.toolStripMenuItem9.Name = "toolStripMenuItem9";
             this.toolStripMenuItem9.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem9.Size = new System.Drawing.Size(186, 34);
+            this.toolStripMenuItem9.Size = new System.Drawing.Size(213, 40);
             this.toolStripMenuItem9.Text = "     Chiết khấu";
             // 
             // toolStripMenuItem10
@@ -1232,7 +1223,7 @@
             this.toolStripMenuItem10.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripMenuItem10.Name = "toolStripMenuItem10";
             this.toolStripMenuItem10.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(186, 34);
+            this.toolStripMenuItem10.Size = new System.Drawing.Size(213, 40);
             this.toolStripMenuItem10.Text = "     Tích Điểm";
             // 
             // toolStripMenuItem11
@@ -1240,7 +1231,7 @@
             this.toolStripMenuItem11.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem11.Image")));
             this.toolStripMenuItem11.Name = "toolStripMenuItem11";
             this.toolStripMenuItem11.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem11.Size = new System.Drawing.Size(186, 34);
+            this.toolStripMenuItem11.Size = new System.Drawing.Size(213, 40);
             this.toolStripMenuItem11.Text = "     Quà tặng";
             // 
             // Settings
@@ -1263,14 +1254,14 @@
             this.Settings.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
             this.Settings.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.Settings.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Settings.Size = new System.Drawing.Size(229, 124);
+            this.Settings.Size = new System.Drawing.Size(250, 128);
             // 
             // toolStripMenuItem12
             // 
             this.toolStripMenuItem12.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem12.Image")));
             this.toolStripMenuItem12.Name = "toolStripMenuItem12";
             this.toolStripMenuItem12.Padding = new System.Windows.Forms.Padding(8);
-            this.toolStripMenuItem12.Size = new System.Drawing.Size(244, 40);
+            this.toolStripMenuItem12.Size = new System.Drawing.Size(287, 46);
             this.toolStripMenuItem12.Text = "     Hiển thị";
             // 
             // toolStripMenuItem13
@@ -1279,7 +1270,7 @@
             this.toolStripMenuItem13.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolStripMenuItem13.Name = "toolStripMenuItem13";
             this.toolStripMenuItem13.Padding = new System.Windows.Forms.Padding(8);
-            this.toolStripMenuItem13.Size = new System.Drawing.Size(244, 40);
+            this.toolStripMenuItem13.Size = new System.Drawing.Size(287, 46);
             this.toolStripMenuItem13.Text = "     Thiết lập cửa hàng";
             // 
             // toolStripMenuItem14
@@ -1288,18 +1279,34 @@
             this.toolStripMenuItem14.MergeAction = System.Windows.Forms.MergeAction.Insert;
             this.toolStripMenuItem14.Name = "toolStripMenuItem14";
             this.toolStripMenuItem14.Padding = new System.Windows.Forms.Padding(8);
-            this.toolStripMenuItem14.Size = new System.Drawing.Size(244, 40);
+            this.toolStripMenuItem14.Size = new System.Drawing.Size(287, 46);
             this.toolStripMenuItem14.Text = "     lịch sử thao tác";
+            // 
+            // accordionControlElement1
+            // 
+            this.accordionControlElement1.Name = "accordionControlElement1";
+            this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement1.Text = "Element1";
+            // 
+            // btnColors
+            // 
+            this.btnColors.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F);
+            this.btnColors.Appearance.Default.Options.UseFont = true;
+            this.btnColors.Name = "btnColors";
+            this.btnColors.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnColors.Text = "Màu sắc";
+            this.btnColors.Click += new System.EventHandler(this.btnColors_Click);
             // 
             // FormHome
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1918, 1028);
+            this.ClientSize = new System.Drawing.Size(1940, 1062);
             this.Controls.Add(this.panelMain);
             this.Controls.Add(this.Siderbar);
             this.Controls.Add(this.Taskbar);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormHome.IconOptions.Image")));
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "FormHome";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Load += new System.EventHandler(this.FormHome_Load);
@@ -1427,7 +1434,7 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem14;
         private DevExpress.LookAndFeel.DefaultLookAndFeel defaultLookAndFeel1;
         private System.Windows.Forms.ToolStripMenuItem FormBanHang;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnColors;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement btnPhuTung;
     }
 }

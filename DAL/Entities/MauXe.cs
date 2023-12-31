@@ -12,9 +12,8 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public MauXe()
         {
-            CT_KMai = new HashSet<CT_KMai>();
-            CT_PNhapXe = new HashSet<CT_PNhapXe>();
-            CT_PPXE = new HashSet<CT_PPXE>();
+            CT_AnhXe = new HashSet<CT_AnhXe>();
+            CT_PNhap = new HashSet<CT_PNhap>();
         }
 
         [Key]
@@ -50,16 +49,11 @@ namespace DAL.Entities
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_KMai> CT_KMai { get; set; }
+        public virtual ICollection<CT_AnhXe> CT_AnhXe { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_PNhapXe> CT_PNhapXe { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_PPXE> CT_PPXE { get; set; }
+        public virtual ICollection<CT_PNhap> CT_PNhap { get; set; }
 
         public virtual HangSX HangSX { get; set; }
-
-        public virtual NhaCungCap NhaCungCap { get; set; }
     }
 }

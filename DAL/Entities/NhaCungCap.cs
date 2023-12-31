@@ -12,9 +12,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhaCungCap()
         {
-            MauXes = new HashSet<MauXe>();
-            PhieuNhapHangs = new HashSet<PhieuNhapHang>();
-            PhuTung_VatLieu = new HashSet<PhuTung_VatLieu>();
+            PhieuNhaps = new HashSet<PhieuNhap>();
         }
 
         [Key]
@@ -44,12 +42,6 @@ namespace DAL.Entities
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<MauXe> MauXes { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuNhapHang> PhieuNhapHangs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhuTung_VatLieu> PhuTung_VatLieu { get; set; }
+        public virtual ICollection<PhieuNhap> PhieuNhaps { get; set; }
     }
 }

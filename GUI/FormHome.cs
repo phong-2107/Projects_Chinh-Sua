@@ -47,10 +47,6 @@ namespace GUI
         {
             btnAccount.Text = Dn.TENNV.ToString();
             pnaccount.Width = 230;
-            if (Dn.ANHNV.Length != 0)
-            {
-                ShowAvatar(Dn.ANHNV);
-            }
             FormTongQuan demo = new FormTongQuan();
             openChildForm(demo);
         }

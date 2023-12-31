@@ -12,12 +12,8 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public NhanVien()
         {
-            HopDongDichVus = new HashSet<HopDongDichVu>();
-            PhieuBaoHanhs = new HashSet<PhieuBaoHanh>();
-            PhieuDoiTras = new HashSet<PhieuDoiTra>();
-            PhieuGiaoHangs = new HashSet<PhieuGiaoHang>();
-            PhieuHens = new HashSet<PhieuHen>();
-            PhieuNhapHangs = new HashSet<PhieuNhapHang>();
+            HopDongs = new HashSet<HopDong>();
+            PhieuNhaps = new HashSet<PhieuNhap>();
         }
 
         [Key]
@@ -29,32 +25,8 @@ namespace DAL.Entities
         public string TENNV { get; set; }
 
         [Required]
-        [StringLength(9)]
-        public string NAMSINH { get; set; }
-
-        [Required]
         [StringLength(10)]
         public string SDT { get; set; }
-
-        [Required]
-        [StringLength(30)]
-        public string EMAIL { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string DIACHI { get; set; }
-
-        [Required]
-        [StringLength(100)]
-        public string ANHNV { get; set; }
-
-        [Required]
-        [StringLength(12)]
-        public string IDCCCD { get; set; }
-
-        [Required]
-        [StringLength(9)]
-        public string NGAYGN { get; set; }
 
         [Required]
         [StringLength(20)]
@@ -65,23 +37,11 @@ namespace DAL.Entities
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HopDongDichVu> HopDongDichVus { get; set; }
+        public virtual ICollection<HopDong> HopDongs { get; set; }
 
         public virtual TaiKhoanLogin TaiKhoanLogin { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuBaoHanh> PhieuBaoHanhs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuDoiTra> PhieuDoiTras { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuGiaoHang> PhieuGiaoHangs { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuHen> PhieuHens { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<PhieuNhapHang> PhieuNhapHangs { get; set; }
+        public virtual ICollection<PhieuNhap> PhieuNhaps { get; set; }
     }
 }
