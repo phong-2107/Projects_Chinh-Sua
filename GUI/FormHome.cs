@@ -163,6 +163,7 @@ namespace GUI
             {
                 Commons.handle = ShowProgressPanel(this, options);
                 FormAccount account = new FormAccount();
+                account.Dn = Dn;
                 account.ShowDialog();
             }
             catch (Exception ex)
