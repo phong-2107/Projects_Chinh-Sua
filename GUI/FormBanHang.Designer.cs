@@ -46,18 +46,6 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.gunaPanel6 = new Guna.UI.WinForms.GunaPanel();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
-            this.gunaPanel14 = new Guna.UI.WinForms.GunaPanel();
-            this.product7 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaPictureBox28 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox29 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox30 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel36 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel37 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel38 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaNumeric7 = new Guna.UI.WinForms.GunaNumeric();
-            this.gunaLabel39 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox31 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel40 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel12 = new Guna.UI.WinForms.GunaPanel();
             this.product5 = new Guna.UI.WinForms.GunaElipsePanel();
             this.gunaPictureBox20 = new Guna.UI.WinForms.GunaPictureBox();
@@ -106,18 +94,6 @@
             this.gunaLabel14 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPictureBox11 = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaLabel15 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
-            this.Product1 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaPictureBox7 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox6 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaPictureBox5 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel9 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel8 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaLabel13 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaNumeric1 = new Guna.UI.WinForms.GunaNumeric();
-            this.gunaLabel12 = new Guna.UI.WinForms.GunaLabel();
-            this.gunaPictureBox4 = new Guna.UI.WinForms.GunaPictureBox();
-            this.gunaLabel7 = new Guna.UI.WinForms.GunaLabel();
             this.gunaPanel13 = new Guna.UI.WinForms.GunaPanel();
             this.gunaPanel15 = new Guna.UI.WinForms.GunaPanel();
             this.product6 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -162,6 +138,9 @@
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
+            this.gunaPanel8 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel14 = new Guna.UI.WinForms.GunaPanel();
+            this.gunaPanel16 = new Guna.UI.WinForms.GunaPanel();
             this.plSiderbar.SuspendLayout();
             this.gunaPanel7.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
@@ -174,12 +153,6 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.gunaPanel6.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
-            this.gunaPanel14.SuspendLayout();
-            this.product7.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox28)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox29)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox30)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox31)).BeginInit();
             this.gunaPanel12.SuspendLayout();
             this.product5.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox20)).BeginInit();
@@ -204,12 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox9)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox10)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox11)).BeginInit();
-            this.gunaPanel8.SuspendLayout();
-            this.Product1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).BeginInit();
             this.gunaPanel13.SuspendLayout();
             this.gunaPanel15.SuspendLayout();
             this.product6.SuspendLayout();
@@ -227,6 +194,9 @@
             this.Menu.SuspendLayout();
             this.DatHang.SuspendLayout();
             this.Search.SuspendLayout();
+            this.gunaPanel8.SuspendLayout();
+            this.gunaPanel14.SuspendLayout();
+            this.gunaPanel16.SuspendLayout();
             this.SuspendLayout();
             // 
             // plSiderbar
@@ -421,7 +391,7 @@
             this.txtSearch.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
-            this.txtSearch.PlaceholderText = "Tìm kiếm sản phẩm, Phụ tùng";
+            this.txtSearch.PlaceholderText = "Tìm kiếm sản phẩm";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(357, 35);
             this.txtSearch.TabIndex = 8;
@@ -444,7 +414,7 @@
             this.gunaPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel2.Location = new System.Drawing.Point(0, 60);
             this.gunaPanel2.Name = "gunaPanel2";
-            this.gunaPanel2.Size = new System.Drawing.Size(1498, 988);
+            this.gunaPanel2.Size = new System.Drawing.Size(1498, 858);
             this.gunaPanel2.TabIndex = 4;
             // 
             // tableLayoutPanel1
@@ -460,206 +430,53 @@
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1498, 988);
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1498, 858);
             this.tableLayoutPanel1.TabIndex = 4;
             // 
             // gunaPanel6
             // 
-            this.gunaPanel6.Controls.Add(this.tableLayoutPanel2);
-            this.gunaPanel6.Controls.Add(this.gunaElipsePanel3);
+            this.gunaPanel6.Controls.Add(this.gunaPanel14);
+            this.gunaPanel6.Controls.Add(this.gunaPanel8);
             this.gunaPanel6.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaPanel6.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel6.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel6.Name = "gunaPanel6";
-            this.gunaPanel6.Size = new System.Drawing.Size(749, 988);
+            this.gunaPanel6.Size = new System.Drawing.Size(749, 858);
             this.gunaPanel6.TabIndex = 5;
+            this.gunaPanel6.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel6_Paint);
             // 
             // tableLayoutPanel2
             // 
             this.tableLayoutPanel2.ColumnCount = 1;
             this.tableLayoutPanel2.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel14, 0, 6);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel12, 0, 4);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel11, 0, 3);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel10, 0, 2);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel9, 0, 1);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel8, 0, 0);
-            this.tableLayoutPanel2.Controls.Add(this.gunaPanel13, 0, 5);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(9, 20);
+            this.tableLayoutPanel2.Controls.Add(this.gunaPanel12, 0, 3);
+            this.tableLayoutPanel2.Controls.Add(this.gunaPanel11, 0, 2);
+            this.tableLayoutPanel2.Controls.Add(this.gunaPanel10, 0, 1);
+            this.tableLayoutPanel2.Controls.Add(this.gunaPanel9, 0, 0);
+            this.tableLayoutPanel2.Controls.Add(this.gunaPanel13, 0, 4);
+            this.tableLayoutPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(0, 0);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
-            this.tableLayoutPanel2.RowCount = 7;
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
-            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 14.28571F));
+            this.tableLayoutPanel2.RowCount = 5;
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel2.Size = new System.Drawing.Size(737, 842);
+            this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
+            this.tableLayoutPanel2.Size = new System.Drawing.Size(749, 619);
             this.tableLayoutPanel2.TabIndex = 13;
-            // 
-            // gunaPanel14
-            // 
-            this.gunaPanel14.Controls.Add(this.product7);
-            this.gunaPanel14.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel14.Location = new System.Drawing.Point(0, 720);
-            this.gunaPanel14.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaPanel14.Name = "gunaPanel14";
-            this.gunaPanel14.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel14.Size = new System.Drawing.Size(737, 122);
-            this.gunaPanel14.TabIndex = 6;
-            // 
-            // product7
-            // 
-            this.product7.BackColor = System.Drawing.Color.Transparent;
-            this.product7.BaseColor = System.Drawing.Color.White;
-            this.product7.Controls.Add(this.gunaPictureBox28);
-            this.product7.Controls.Add(this.gunaPictureBox29);
-            this.product7.Controls.Add(this.gunaPictureBox30);
-            this.product7.Controls.Add(this.gunaLabel36);
-            this.product7.Controls.Add(this.gunaLabel37);
-            this.product7.Controls.Add(this.gunaLabel38);
-            this.product7.Controls.Add(this.gunaNumeric7);
-            this.product7.Controls.Add(this.gunaLabel39);
-            this.product7.Controls.Add(this.gunaPictureBox31);
-            this.product7.Controls.Add(this.gunaLabel40);
-            this.product7.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.product7.Location = new System.Drawing.Point(10, 10);
-            this.product7.Name = "product7";
-            this.product7.Radius = 10;
-            this.product7.Size = new System.Drawing.Size(717, 102);
-            this.product7.TabIndex = 12;
-            this.product7.Visible = false;
-            // 
-            // gunaPictureBox28
-            // 
-            this.gunaPictureBox28.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox28.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox28.Image")));
-            this.gunaPictureBox28.Location = new System.Drawing.Point(673, 9);
-            this.gunaPictureBox28.Name = "gunaPictureBox28";
-            this.gunaPictureBox28.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox28.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox28.TabIndex = 18;
-            this.gunaPictureBox28.TabStop = false;
-            // 
-            // gunaPictureBox29
-            // 
-            this.gunaPictureBox29.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox29.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox29.Image")));
-            this.gunaPictureBox29.Location = new System.Drawing.Point(628, 9);
-            this.gunaPictureBox29.Name = "gunaPictureBox29";
-            this.gunaPictureBox29.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox29.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox29.TabIndex = 17;
-            this.gunaPictureBox29.TabStop = false;
-            // 
-            // gunaPictureBox30
-            // 
-            this.gunaPictureBox30.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox30.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox30.Image")));
-            this.gunaPictureBox30.Location = new System.Drawing.Point(585, 9);
-            this.gunaPictureBox30.Name = "gunaPictureBox30";
-            this.gunaPictureBox30.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox30.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox30.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox30.TabIndex = 12;
-            this.gunaPictureBox30.TabStop = false;
-            // 
-            // gunaLabel36
-            // 
-            this.gunaLabel36.AutoSize = true;
-            this.gunaLabel36.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel36.Location = new System.Drawing.Point(651, 59);
-            this.gunaLabel36.Name = "gunaLabel36";
-            this.gunaLabel36.Size = new System.Drawing.Size(60, 20);
-            this.gunaLabel36.TabIndex = 16;
-            this.gunaLabel36.Text = "999,000";
-            // 
-            // gunaLabel37
-            // 
-            this.gunaLabel37.AutoSize = true;
-            this.gunaLabel37.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel37.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel37.Location = new System.Drawing.Point(571, 61);
-            this.gunaLabel37.Name = "gunaLabel37";
-            this.gunaLabel37.Size = new System.Drawing.Size(56, 17);
-            this.gunaLabel37.TabIndex = 15;
-            this.gunaLabel37.Text = "Giá bán:";
-            // 
-            // gunaLabel38
-            // 
-            this.gunaLabel38.AutoSize = true;
-            this.gunaLabel38.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel38.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel38.Location = new System.Drawing.Point(53, 59);
-            this.gunaLabel38.Name = "gunaLabel38";
-            this.gunaLabel38.Size = new System.Drawing.Size(61, 17);
-            this.gunaLabel38.TabIndex = 14;
-            this.gunaLabel38.Text = "Số lượng";
-            // 
-            // gunaNumeric7
-            // 
-            this.gunaNumeric7.BackColor = System.Drawing.Color.Transparent;
-            this.gunaNumeric7.BaseColor = System.Drawing.Color.White;
-            this.gunaNumeric7.BorderColor = System.Drawing.Color.Silver;
-            this.gunaNumeric7.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.gunaNumeric7.ButtonForeColor = System.Drawing.Color.White;
-            this.gunaNumeric7.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaNumeric7.ForeColor = System.Drawing.Color.Black;
-            this.gunaNumeric7.Location = new System.Drawing.Point(121, 59);
-            this.gunaNumeric7.Maximum = ((long)(9999999));
-            this.gunaNumeric7.Minimum = ((long)(0));
-            this.gunaNumeric7.Name = "gunaNumeric7";
-            this.gunaNumeric7.Radius = 3;
-            this.gunaNumeric7.Size = new System.Drawing.Size(114, 30);
-            this.gunaNumeric7.TabIndex = 13;
-            this.gunaNumeric7.Text = "gunaNumeric7";
-            this.gunaNumeric7.Value = ((long)(0));
-            // 
-            // gunaLabel39
-            // 
-            this.gunaLabel39.AutoSize = true;
-            this.gunaLabel39.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel39.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel39.Location = new System.Drawing.Point(42, 12);
-            this.gunaLabel39.Name = "gunaLabel39";
-            this.gunaLabel39.Size = new System.Drawing.Size(23, 17);
-            this.gunaLabel39.TabIndex = 12;
-            this.gunaLabel39.Text = "ID:";
-            // 
-            // gunaPictureBox31
-            // 
-            this.gunaPictureBox31.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox31.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox31.Image")));
-            this.gunaPictureBox31.Location = new System.Drawing.Point(10, 9);
-            this.gunaPictureBox31.Name = "gunaPictureBox31";
-            this.gunaPictureBox31.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox31.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox31.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox31.TabIndex = 1;
-            this.gunaPictureBox31.TabStop = false;
-            // 
-            // gunaLabel40
-            // 
-            this.gunaLabel40.AutoSize = true;
-            this.gunaLabel40.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel40.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel40.Location = new System.Drawing.Point(181, 12);
-            this.gunaLabel40.Name = "gunaLabel40";
-            this.gunaLabel40.Size = new System.Drawing.Size(88, 17);
-            this.gunaLabel40.TabIndex = 11;
-            this.gunaLabel40.Text = "Tên Mặt hàng";
             // 
             // gunaPanel12
             // 
             this.gunaPanel12.Controls.Add(this.product5);
             this.gunaPanel12.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel12.Location = new System.Drawing.Point(0, 480);
+            this.gunaPanel12.Location = new System.Drawing.Point(0, 369);
             this.gunaPanel12.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel12.Name = "gunaPanel12";
             this.gunaPanel12.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel12.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel12.Size = new System.Drawing.Size(749, 123);
             this.gunaPanel12.TabIndex = 4;
             // 
             // product5
@@ -680,7 +497,7 @@
             this.product5.Location = new System.Drawing.Point(10, 10);
             this.product5.Name = "product5";
             this.product5.Radius = 10;
-            this.product5.Size = new System.Drawing.Size(717, 100);
+            this.product5.Size = new System.Drawing.Size(729, 103);
             this.product5.TabIndex = 12;
             this.product5.Visible = false;
             // 
@@ -807,11 +624,11 @@
             // 
             this.gunaPanel11.Controls.Add(this.product4);
             this.gunaPanel11.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel11.Location = new System.Drawing.Point(0, 360);
+            this.gunaPanel11.Location = new System.Drawing.Point(0, 246);
             this.gunaPanel11.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel11.Name = "gunaPanel11";
             this.gunaPanel11.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel11.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel11.Size = new System.Drawing.Size(749, 123);
             this.gunaPanel11.TabIndex = 3;
             // 
             // product4
@@ -832,7 +649,7 @@
             this.product4.Location = new System.Drawing.Point(10, 10);
             this.product4.Name = "product4";
             this.product4.Radius = 10;
-            this.product4.Size = new System.Drawing.Size(717, 100);
+            this.product4.Size = new System.Drawing.Size(729, 103);
             this.product4.TabIndex = 12;
             this.product4.Visible = false;
             // 
@@ -959,11 +776,11 @@
             // 
             this.gunaPanel10.Controls.Add(this.product3);
             this.gunaPanel10.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel10.Location = new System.Drawing.Point(0, 240);
+            this.gunaPanel10.Location = new System.Drawing.Point(0, 123);
             this.gunaPanel10.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel10.Name = "gunaPanel10";
             this.gunaPanel10.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel10.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel10.Size = new System.Drawing.Size(749, 123);
             this.gunaPanel10.TabIndex = 2;
             // 
             // product3
@@ -984,7 +801,7 @@
             this.product3.Location = new System.Drawing.Point(10, 10);
             this.product3.Name = "product3";
             this.product3.Radius = 10;
-            this.product3.Size = new System.Drawing.Size(717, 100);
+            this.product3.Size = new System.Drawing.Size(729, 103);
             this.product3.TabIndex = 12;
             this.product3.Visible = false;
             // 
@@ -1111,11 +928,11 @@
             // 
             this.gunaPanel9.Controls.Add(this.product2);
             this.gunaPanel9.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel9.Location = new System.Drawing.Point(0, 120);
+            this.gunaPanel9.Location = new System.Drawing.Point(0, 0);
             this.gunaPanel9.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel9.Name = "gunaPanel9";
             this.gunaPanel9.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel9.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel9.Size = new System.Drawing.Size(749, 123);
             this.gunaPanel9.TabIndex = 1;
             // 
             // product2
@@ -1136,7 +953,7 @@
             this.product2.Location = new System.Drawing.Point(10, 10);
             this.product2.Name = "product2";
             this.product2.Radius = 10;
-            this.product2.Size = new System.Drawing.Size(717, 100);
+            this.product2.Size = new System.Drawing.Size(729, 103);
             this.product2.TabIndex = 12;
             this.product2.Visible = false;
             // 
@@ -1259,165 +1076,14 @@
             this.gunaLabel15.TabIndex = 11;
             this.gunaLabel15.Text = "Tên Mặt hàng";
             // 
-            // gunaPanel8
-            // 
-            this.gunaPanel8.Controls.Add(this.Product1);
-            this.gunaPanel8.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel8.Location = new System.Drawing.Point(0, 0);
-            this.gunaPanel8.Margin = new System.Windows.Forms.Padding(0);
-            this.gunaPanel8.Name = "gunaPanel8";
-            this.gunaPanel8.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel8.Size = new System.Drawing.Size(737, 120);
-            this.gunaPanel8.TabIndex = 0;
-            // 
-            // Product1
-            // 
-            this.Product1.BackColor = System.Drawing.Color.Transparent;
-            this.Product1.BaseColor = System.Drawing.Color.White;
-            this.Product1.Controls.Add(this.gunaPictureBox7);
-            this.Product1.Controls.Add(this.gunaPictureBox6);
-            this.Product1.Controls.Add(this.gunaPictureBox5);
-            this.Product1.Controls.Add(this.gunaLabel9);
-            this.Product1.Controls.Add(this.gunaLabel8);
-            this.Product1.Controls.Add(this.gunaLabel13);
-            this.Product1.Controls.Add(this.gunaNumeric1);
-            this.Product1.Controls.Add(this.gunaLabel12);
-            this.Product1.Controls.Add(this.gunaPictureBox4);
-            this.Product1.Controls.Add(this.gunaLabel7);
-            this.Product1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.Product1.Location = new System.Drawing.Point(10, 10);
-            this.Product1.Name = "Product1";
-            this.Product1.Radius = 10;
-            this.Product1.Size = new System.Drawing.Size(717, 100);
-            this.Product1.TabIndex = 12;
-            // 
-            // gunaPictureBox7
-            // 
-            this.gunaPictureBox7.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox7.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox7.Image")));
-            this.gunaPictureBox7.Location = new System.Drawing.Point(673, 9);
-            this.gunaPictureBox7.Name = "gunaPictureBox7";
-            this.gunaPictureBox7.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox7.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox7.TabIndex = 18;
-            this.gunaPictureBox7.TabStop = false;
-            // 
-            // gunaPictureBox6
-            // 
-            this.gunaPictureBox6.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox6.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox6.Image")));
-            this.gunaPictureBox6.Location = new System.Drawing.Point(628, 9);
-            this.gunaPictureBox6.Name = "gunaPictureBox6";
-            this.gunaPictureBox6.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox6.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox6.TabIndex = 17;
-            this.gunaPictureBox6.TabStop = false;
-            // 
-            // gunaPictureBox5
-            // 
-            this.gunaPictureBox5.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox5.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox5.Image")));
-            this.gunaPictureBox5.Location = new System.Drawing.Point(585, 9);
-            this.gunaPictureBox5.Name = "gunaPictureBox5";
-            this.gunaPictureBox5.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox5.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox5.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox5.TabIndex = 12;
-            this.gunaPictureBox5.TabStop = false;
-            // 
-            // gunaLabel9
-            // 
-            this.gunaLabel9.AutoSize = true;
-            this.gunaLabel9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel9.Location = new System.Drawing.Point(651, 59);
-            this.gunaLabel9.Name = "gunaLabel9";
-            this.gunaLabel9.Size = new System.Drawing.Size(60, 20);
-            this.gunaLabel9.TabIndex = 16;
-            this.gunaLabel9.Text = "999,000";
-            // 
-            // gunaLabel8
-            // 
-            this.gunaLabel8.AutoSize = true;
-            this.gunaLabel8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel8.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel8.Location = new System.Drawing.Point(571, 61);
-            this.gunaLabel8.Name = "gunaLabel8";
-            this.gunaLabel8.Size = new System.Drawing.Size(56, 17);
-            this.gunaLabel8.TabIndex = 15;
-            this.gunaLabel8.Text = "Giá bán:";
-            // 
-            // gunaLabel13
-            // 
-            this.gunaLabel13.AutoSize = true;
-            this.gunaLabel13.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel13.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel13.Location = new System.Drawing.Point(53, 59);
-            this.gunaLabel13.Name = "gunaLabel13";
-            this.gunaLabel13.Size = new System.Drawing.Size(61, 17);
-            this.gunaLabel13.TabIndex = 14;
-            this.gunaLabel13.Text = "Số lượng";
-            // 
-            // gunaNumeric1
-            // 
-            this.gunaNumeric1.BackColor = System.Drawing.Color.Transparent;
-            this.gunaNumeric1.BaseColor = System.Drawing.Color.White;
-            this.gunaNumeric1.BorderColor = System.Drawing.Color.Silver;
-            this.gunaNumeric1.ButtonColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
-            this.gunaNumeric1.ButtonForeColor = System.Drawing.Color.White;
-            this.gunaNumeric1.Font = new System.Drawing.Font("Segoe UI", 10F);
-            this.gunaNumeric1.ForeColor = System.Drawing.Color.Black;
-            this.gunaNumeric1.Location = new System.Drawing.Point(121, 59);
-            this.gunaNumeric1.Maximum = ((long)(9999999));
-            this.gunaNumeric1.Minimum = ((long)(0));
-            this.gunaNumeric1.Name = "gunaNumeric1";
-            this.gunaNumeric1.Radius = 3;
-            this.gunaNumeric1.Size = new System.Drawing.Size(114, 30);
-            this.gunaNumeric1.TabIndex = 13;
-            this.gunaNumeric1.Text = "gunaNumeric1";
-            this.gunaNumeric1.Value = ((long)(0));
-            // 
-            // gunaLabel12
-            // 
-            this.gunaLabel12.AutoSize = true;
-            this.gunaLabel12.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel12.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel12.Location = new System.Drawing.Point(42, 12);
-            this.gunaLabel12.Name = "gunaLabel12";
-            this.gunaLabel12.Size = new System.Drawing.Size(23, 17);
-            this.gunaLabel12.TabIndex = 12;
-            this.gunaLabel12.Text = "ID:";
-            // 
-            // gunaPictureBox4
-            // 
-            this.gunaPictureBox4.BaseColor = System.Drawing.Color.White;
-            this.gunaPictureBox4.Image = ((System.Drawing.Image)(resources.GetObject("gunaPictureBox4.Image")));
-            this.gunaPictureBox4.Location = new System.Drawing.Point(10, 9);
-            this.gunaPictureBox4.Name = "gunaPictureBox4";
-            this.gunaPictureBox4.Padding = new System.Windows.Forms.Padding(3);
-            this.gunaPictureBox4.Size = new System.Drawing.Size(26, 26);
-            this.gunaPictureBox4.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.gunaPictureBox4.TabIndex = 1;
-            this.gunaPictureBox4.TabStop = false;
-            // 
-            // gunaLabel7
-            // 
-            this.gunaLabel7.AutoSize = true;
-            this.gunaLabel7.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaLabel7.ForeColor = System.Drawing.Color.Gray;
-            this.gunaLabel7.Location = new System.Drawing.Point(181, 12);
-            this.gunaLabel7.Name = "gunaLabel7";
-            this.gunaLabel7.Size = new System.Drawing.Size(88, 17);
-            this.gunaLabel7.TabIndex = 11;
-            this.gunaLabel7.Text = "Tên Mặt hàng";
-            // 
             // gunaPanel13
             // 
             this.gunaPanel13.Controls.Add(this.gunaPanel15);
             this.gunaPanel13.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaPanel13.Location = new System.Drawing.Point(0, 600);
+            this.gunaPanel13.Location = new System.Drawing.Point(0, 492);
             this.gunaPanel13.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel13.Name = "gunaPanel13";
-            this.gunaPanel13.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel13.Size = new System.Drawing.Size(749, 127);
             this.gunaPanel13.TabIndex = 7;
             // 
             // gunaPanel15
@@ -1428,7 +1094,7 @@
             this.gunaPanel15.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel15.Name = "gunaPanel15";
             this.gunaPanel15.Padding = new System.Windows.Forms.Padding(10);
-            this.gunaPanel15.Size = new System.Drawing.Size(737, 120);
+            this.gunaPanel15.Size = new System.Drawing.Size(749, 127);
             this.gunaPanel15.TabIndex = 1;
             // 
             // product6
@@ -1449,7 +1115,7 @@
             this.product6.Location = new System.Drawing.Point(10, 10);
             this.product6.Name = "product6";
             this.product6.Radius = 10;
-            this.product6.Size = new System.Drawing.Size(717, 100);
+            this.product6.Size = new System.Drawing.Size(729, 107);
             this.product6.TabIndex = 12;
             this.product6.Visible = false;
             // 
@@ -1583,10 +1249,11 @@
             this.gunaElipsePanel3.Controls.Add(this.gunaLabel4);
             this.gunaElipsePanel3.Controls.Add(this.gunaLabel3);
             this.gunaElipsePanel3.Controls.Add(this.gunaLabel2);
-            this.gunaElipsePanel3.Location = new System.Drawing.Point(9, 868);
+            this.gunaElipsePanel3.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.gunaElipsePanel3.Location = new System.Drawing.Point(10, 10);
             this.gunaElipsePanel3.Name = "gunaElipsePanel3";
             this.gunaElipsePanel3.Radius = 10;
-            this.gunaElipsePanel3.Size = new System.Drawing.Size(719, 105);
+            this.gunaElipsePanel3.Size = new System.Drawing.Size(729, 100);
             this.gunaElipsePanel3.TabIndex = 0;
             // 
             // gunaPictureBox3
@@ -1679,20 +1346,21 @@
             this.gunaPanel5.Margin = new System.Windows.Forms.Padding(0);
             this.gunaPanel5.Name = "gunaPanel5";
             this.gunaPanel5.Padding = new System.Windows.Forms.Padding(20);
-            this.gunaPanel5.Size = new System.Drawing.Size(749, 988);
+            this.gunaPanel5.Size = new System.Drawing.Size(749, 858);
             this.gunaPanel5.TabIndex = 4;
+            this.gunaPanel5.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel5_Paint);
             // 
             // gunaElipsePanel1
             // 
             this.gunaElipsePanel1.BackColor = System.Drawing.Color.Transparent;
             this.gunaElipsePanel1.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel1.Controls.Add(this.btnQuanli);
+            this.gunaElipsePanel1.Controls.Add(this.gunaPanel16);
             this.gunaElipsePanel1.Controls.Add(this.gunaElipsePanel2);
             this.gunaElipsePanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaElipsePanel1.Location = new System.Drawing.Point(20, 20);
             this.gunaElipsePanel1.Name = "gunaElipsePanel1";
             this.gunaElipsePanel1.Radius = 15;
-            this.gunaElipsePanel1.Size = new System.Drawing.Size(709, 948);
+            this.gunaElipsePanel1.Size = new System.Drawing.Size(709, 818);
             this.gunaElipsePanel1.TabIndex = 0;
             // 
             // btnQuanli
@@ -1703,13 +1371,14 @@
             this.btnQuanli.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(112)))), ((int)(((byte)(255)))));
             this.btnQuanli.BorderColor = System.Drawing.Color.Black;
             this.btnQuanli.DialogResult = System.Windows.Forms.DialogResult.None;
+            this.btnQuanli.Dock = System.Windows.Forms.DockStyle.Fill;
             this.btnQuanli.FocusedColor = System.Drawing.Color.Empty;
             this.btnQuanli.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btnQuanli.ForeColor = System.Drawing.Color.White;
             this.btnQuanli.Image = null;
             this.btnQuanli.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnQuanli.ImageSize = new System.Drawing.Size(30, 30);
-            this.btnQuanli.Location = new System.Drawing.Point(189, 865);
+            this.btnQuanli.Location = new System.Drawing.Point(170, 25);
             this.btnQuanli.Name = "btnQuanli";
             this.btnQuanli.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(90)))), ((int)(((byte)(195)))));
             this.btnQuanli.OnHoverBorderColor = System.Drawing.Color.Transparent;
@@ -1717,7 +1386,7 @@
             this.btnQuanli.OnHoverImage = null;
             this.btnQuanli.OnPressedColor = System.Drawing.Color.Black;
             this.btnQuanli.Radius = 3;
-            this.btnQuanli.Size = new System.Drawing.Size(361, 50);
+            this.btnQuanli.Size = new System.Drawing.Size(369, 50);
             this.btnQuanli.TabIndex = 7;
             this.btnQuanli.Text = "Thanh toán";
             this.btnQuanli.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
@@ -1995,13 +1664,43 @@
             this.toolStripMenuItem6.Size = new System.Drawing.Size(285, 44);
             this.toolStripMenuItem6.Text = "    Đăng xuất";
             // 
+            // gunaPanel8
+            // 
+            this.gunaPanel8.Controls.Add(this.gunaElipsePanel3);
+            this.gunaPanel8.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel8.Location = new System.Drawing.Point(0, 738);
+            this.gunaPanel8.Name = "gunaPanel8";
+            this.gunaPanel8.Padding = new System.Windows.Forms.Padding(10);
+            this.gunaPanel8.Size = new System.Drawing.Size(749, 120);
+            this.gunaPanel8.TabIndex = 15;
+            // 
+            // gunaPanel14
+            // 
+            this.gunaPanel14.Controls.Add(this.tableLayoutPanel2);
+            this.gunaPanel14.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel14.Location = new System.Drawing.Point(0, 119);
+            this.gunaPanel14.Name = "gunaPanel14";
+            this.gunaPanel14.Size = new System.Drawing.Size(749, 619);
+            this.gunaPanel14.TabIndex = 16;
+            // 
+            // gunaPanel16
+            // 
+            this.gunaPanel16.Controls.Add(this.btnQuanli);
+            this.gunaPanel16.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.gunaPanel16.Location = new System.Drawing.Point(0, 718);
+            this.gunaPanel16.Margin = new System.Windows.Forms.Padding(0);
+            this.gunaPanel16.Name = "gunaPanel16";
+            this.gunaPanel16.Padding = new System.Windows.Forms.Padding(170, 25, 170, 25);
+            this.gunaPanel16.Size = new System.Drawing.Size(709, 100);
+            this.gunaPanel16.TabIndex = 8;
+            // 
             // FormBanHang
             // 
             this.Appearance.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(238)))), ((int)(((byte)(239)))), ((int)(((byte)(242)))));
             this.Appearance.Options.UseBackColor = true;
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1498, 1048);
+            this.ClientSize = new System.Drawing.Size(1498, 918);
             this.Controls.Add(this.gunaPanel2);
             this.Controls.Add(this.plSiderbar);
             this.IconOptions.Image = ((System.Drawing.Image)(resources.GetObject("FormBanHang.IconOptions.Image")));
@@ -2019,13 +1718,6 @@
             this.tableLayoutPanel1.ResumeLayout(false);
             this.gunaPanel6.ResumeLayout(false);
             this.tableLayoutPanel2.ResumeLayout(false);
-            this.gunaPanel14.ResumeLayout(false);
-            this.product7.ResumeLayout(false);
-            this.product7.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox28)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox29)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox30)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox31)).EndInit();
             this.gunaPanel12.ResumeLayout(false);
             this.product5.ResumeLayout(false);
             this.product5.PerformLayout();
@@ -2054,13 +1746,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox9)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox10)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox11)).EndInit();
-            this.gunaPanel8.ResumeLayout(false);
-            this.Product1.ResumeLayout(false);
-            this.Product1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.gunaPictureBox4)).EndInit();
             this.gunaPanel13.ResumeLayout(false);
             this.gunaPanel15.ResumeLayout(false);
             this.product6.ResumeLayout(false);
@@ -2080,6 +1765,9 @@
             this.Menu.ResumeLayout(false);
             this.DatHang.ResumeLayout(false);
             this.Search.ResumeLayout(false);
+            this.gunaPanel8.ResumeLayout(false);
+            this.gunaPanel14.ResumeLayout(false);
+            this.gunaPanel16.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -2127,18 +1815,6 @@
         private Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
         private System.Windows.Forms.ToolStripMenuItem btnExit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
-        private Guna.UI.WinForms.GunaPanel gunaPanel14;
-        private Guna.UI.WinForms.GunaElipsePanel product7;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox28;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox29;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox30;
-        private Guna.UI.WinForms.GunaLabel gunaLabel36;
-        private Guna.UI.WinForms.GunaLabel gunaLabel37;
-        private Guna.UI.WinForms.GunaLabel gunaLabel38;
-        private Guna.UI.WinForms.GunaNumeric gunaNumeric7;
-        private Guna.UI.WinForms.GunaLabel gunaLabel39;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox31;
-        private Guna.UI.WinForms.GunaLabel gunaLabel40;
         private Guna.UI.WinForms.GunaPanel gunaPanel12;
         private Guna.UI.WinForms.GunaElipsePanel product5;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox20;
@@ -2187,18 +1863,6 @@
         private Guna.UI.WinForms.GunaLabel gunaLabel14;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox11;
         private Guna.UI.WinForms.GunaLabel gunaLabel15;
-        private Guna.UI.WinForms.GunaPanel gunaPanel8;
-        private Guna.UI.WinForms.GunaElipsePanel Product1;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox7;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox6;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
-        private Guna.UI.WinForms.GunaLabel gunaLabel9;
-        private Guna.UI.WinForms.GunaLabel gunaLabel8;
-        private Guna.UI.WinForms.GunaLabel gunaLabel13;
-        private Guna.UI.WinForms.GunaNumeric gunaNumeric1;
-        private Guna.UI.WinForms.GunaLabel gunaLabel12;
-        private Guna.UI.WinForms.GunaPictureBox gunaPictureBox4;
-        private Guna.UI.WinForms.GunaLabel gunaLabel7;
         private Guna.UI.WinForms.GunaPanel gunaPanel13;
         private Guna.UI.WinForms.GunaPanel gunaPanel15;
         private Guna.UI.WinForms.GunaElipsePanel product6;
@@ -2219,5 +1883,8 @@
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
+        private Guna.UI.WinForms.GunaPanel gunaPanel8;
+        private Guna.UI.WinForms.GunaPanel gunaPanel14;
+        private Guna.UI.WinForms.GunaPanel gunaPanel16;
     }
 }

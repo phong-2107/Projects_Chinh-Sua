@@ -99,5 +99,15 @@ namespace GUI
         }
 
         #endregion
+
+        private void gunaPanel6_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void gunaPanel5_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }
