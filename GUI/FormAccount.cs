@@ -84,7 +84,7 @@ namespace GUI
 
         private void btnLuu_Click(object sender, EventArgs e)
         {
-            if(Dn.TaiKhoanLogin.MATKHAU != txtPassOld.Text.Trim())
+            if(txtPassOld.Text.Trim() != Dn.TaiKhoanLogin.MATKHAU)
             {
                 MessageBox.Show("Mật khẩu sai");
                 txtPassOld.BorderColor = Color.Red;
