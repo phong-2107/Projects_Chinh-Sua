@@ -150,11 +150,10 @@
             this.btnAddCustomer = new Guna.UI.WinForms.GunaPictureBox();
             this.gunaPictureBox2 = new Guna.UI.WinForms.GunaPictureBox();
             this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.Menu = new GUI.borderRadius.borderMenutrip();
-            this.BtnBaoCao = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnPhieuThu = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnManage = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnExit = new System.Windows.Forms.ToolStripMenuItem();
+            this.Menu = new Guna.UI.WinForms.GunaContextMenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnAccountItem = new System.Windows.Forms.ToolStripMenuItem();
             this.plSiderbar.SuspendLayout();
             this.gunaPanel7.SuspendLayout();
             this.gunaPanel3.SuspendLayout();
@@ -1908,69 +1907,55 @@
             // Menu
             // 
             this.Menu.BackColor = System.Drawing.Color.White;
+            this.Menu.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Menu.ImageScalingSize = new System.Drawing.Size(20, 20);
             this.Menu.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.BtnBaoCao,
-            this.btnPhieuThu,
-            this.btnManage,
-            this.btnExit});
-            this.Menu.Name = "borderMenutrip1";
-            this.Menu.RenderStyle.ArrowColor = System.Drawing.Color.WhiteSmoke;
-            this.Menu.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnAccountItem,
+            this.toolStripMenuItem1,
+            this.toolStripMenuItem2});
+            this.Menu.MinimumSize = new System.Drawing.Size(200, 135);
+            this.Menu.Name = "SanPham";
+            this.Menu.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
+            this.Menu.RenderStyle.BorderColor = System.Drawing.Color.Transparent;
             this.Menu.RenderStyle.ColorTable = null;
             this.Menu.RenderStyle.RoundedEdges = true;
             this.Menu.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.Menu.RenderStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
-            this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
+            this.Menu.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(120)))), ((int)(((byte)(254)))));
+            this.Menu.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
+            this.Menu.RenderStyle.SeparatorColor = System.Drawing.Color.Transparent;
             this.Menu.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.Menu.Size = new System.Drawing.Size(256, 180);
+            this.Menu.Size = new System.Drawing.Size(200, 158);
             // 
-            // BtnBaoCao
+            // toolStripMenuItem1
             // 
-            this.BtnBaoCao.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.BtnBaoCao.Image = ((System.Drawing.Image)(resources.GetObject("BtnBaoCao.Image")));
-            this.BtnBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.BtnBaoCao.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.BtnBaoCao.Name = "BtnBaoCao";
-            this.BtnBaoCao.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
-            this.BtnBaoCao.Size = new System.Drawing.Size(285, 44);
-            this.BtnBaoCao.Text = "    Xem Báo Cáo Cuối ngày";
+            this.toolStripMenuItem1.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem1.Image")));
+            this.toolStripMenuItem1.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(219, 44);
+            this.toolStripMenuItem1.Text = "     Quản lý";
+            this.toolStripMenuItem1.Click += new System.EventHandler(this.btnManage_Click);
             // 
-            // btnPhieuThu
+            // toolStripMenuItem2
             // 
-            this.btnPhieuThu.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPhieuThu.Image = ((System.Drawing.Image)(resources.GetObject("btnPhieuThu.Image")));
-            this.btnPhieuThu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnPhieuThu.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnPhieuThu.Name = "btnPhieuThu";
-            this.btnPhieuThu.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
-            this.btnPhieuThu.Size = new System.Drawing.Size(285, 44);
-            this.btnPhieuThu.Text = "    Lập phiếu thu";
+            this.toolStripMenuItem2.ForeColor = System.Drawing.Color.OrangeRed;
+            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
+            this.toolStripMenuItem2.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
+            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10);
+            this.toolStripMenuItem2.Size = new System.Drawing.Size(219, 44);
+            this.toolStripMenuItem2.Text = "     Đăng xuất";
+            this.toolStripMenuItem2.Click += new System.EventHandler(this.btnExit_Click);
             // 
-            // btnManage
+            // btnAccountItem
             // 
-            this.btnManage.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManage.Image = ((System.Drawing.Image)(resources.GetObject("btnManage.Image")));
-            this.btnManage.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnManage.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnManage.Name = "btnManage";
-            this.btnManage.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
-            this.btnManage.Size = new System.Drawing.Size(285, 44);
-            this.btnManage.Text = "    Quản lý";
-            this.btnManage.Click += new System.EventHandler(this.btnManage_Click);
-            // 
-            // btnExit
-            // 
-            this.btnExit.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnExit.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-            this.btnExit.Image = ((System.Drawing.Image)(resources.GetObject("btnExit.Image")));
-            this.btnExit.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btnExit.ImageScaling = System.Windows.Forms.ToolStripItemImageScaling.None;
-            this.btnExit.Name = "btnExit";
-            this.btnExit.Padding = new System.Windows.Forms.Padding(10, 10, 20, 10);
-            this.btnExit.Size = new System.Drawing.Size(285, 44);
-            this.btnExit.Text = "    Đăng xuất";
-            this.btnExit.Click += new System.EventHandler(this.btnExit_Click);
+            this.btnAccountItem.Image = ((System.Drawing.Image)(resources.GetObject("btnAccountItem.Image")));
+            this.btnAccountItem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btnAccountItem.Margin = new System.Windows.Forms.Padding(10, 0, 10, 0);
+            this.btnAccountItem.Name = "btnAccountItem";
+            this.btnAccountItem.Padding = new System.Windows.Forms.Padding(10);
+            this.btnAccountItem.Size = new System.Drawing.Size(219, 44);
+            this.btnAccountItem.Text = "     Lập phiếu thu";
             // 
             // FormBanHang
             // 
@@ -2054,10 +2039,6 @@
         private Guna.UI.WinForms.GunaCircleButton btnDatHang;
         private Guna.UI.WinForms.GunaPanel gunaPanel3;
         private Guna.UI.WinForms.GunaCircleButton btnIn;
-        private borderRadius.borderMenutrip Menu;
-        private System.Windows.Forms.ToolStripMenuItem BtnBaoCao;
-        private System.Windows.Forms.ToolStripMenuItem btnPhieuThu;
-        private System.Windows.Forms.ToolStripMenuItem btnManage;
         private Guna.UI.WinForms.GunaPanel gunaPanel2;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private Guna.UI.WinForms.GunaPanel gunaPanel6;
@@ -2070,7 +2051,6 @@
         private Guna.UI.WinForms.GunaPictureBox btnAddCustomer;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI2.WinForms.Guna2TextBox txtFindKH;
-        private System.Windows.Forms.ToolStripMenuItem btnExit;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
         private Guna.UI.WinForms.GunaPanel gunaPanel12;
         private Guna.UI.WinForms.GunaElipsePanel product4;
@@ -2167,5 +2147,9 @@
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox14;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox13;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox5;
+        private Guna.UI.WinForms.GunaContextMenuStrip Menu;
+        private System.Windows.Forms.ToolStripMenuItem btnAccountItem;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem1;
+        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
     }
 }
