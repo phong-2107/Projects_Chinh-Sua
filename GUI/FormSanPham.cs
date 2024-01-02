@@ -248,9 +248,10 @@ namespace GUI
         {
             try
             {
+                /*
                 Commons.handle = ShowProgressPanel(this, options);
                 FormNhapThemXe ThemHang = new FormNhapThemXe();
-                ThemHang.ShowDialog();
+                ThemHang.ShowDialog();*/
             }
             catch (Exception ex)
             {
