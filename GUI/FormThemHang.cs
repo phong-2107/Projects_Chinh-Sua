@@ -52,36 +52,7 @@ namespace GUI
         }
         private void txtSL_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                var isNumeric = int.TryParse(txtSL.Text, out _);
-                if(txtSL.Text == "")
-                {
-                    txtSL.FocusedState.BorderColor = Color.FromArgb(94, 148, 255);
-                    txtSL.BorderColor = Color.FromArgb(94, 148, 255);
-                }
-                else if(isNumeric)
-                {
-                    btnCT.Visible = true;
-                    txtError.Visible = false;
-                    txtSL.FocusedState.BorderColor = Color.Green;
-                    txtSL.BorderColor = Color.Green;
-                }
-                else if(isNumeric == false &&  txtSL.Text != "")
-                {
-                    txtError.Visible = true;
-                    txtError.Text = "Giá trị nhập phải là số";
-                    txtSL.Text = "";
-                    txtSL.Focus();
-                    txtSL.FocusedState.BorderColor = Color.Red;
-                    txtSL.BorderColor = Color.Red;
-                    btnCT.Visible = false;
-                }
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show(ex.Message);
-            }
+            
         }
         #endregion
 
@@ -97,6 +68,31 @@ namespace GUI
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+            
+        }
+
+        private void FormThemHang_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnAnhXe_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void btnReturn_Click(object sender, EventArgs e)
+        {
+            pnAnhXe.SendToBack();
+        }
+
+        private void btnAddCTAnhXe_Click(object sender, EventArgs e)
+        {
+            pnAnhXe.BringToFront();
         }
     }
 }

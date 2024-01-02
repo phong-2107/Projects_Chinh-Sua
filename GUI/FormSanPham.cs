@@ -243,6 +243,20 @@ namespace GUI
         {
 
         }
+
+        private void btnNhapXe_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                Commons.handle = ShowProgressPanel(this, options);
+                FormNhapThemXe ThemHang = new FormNhapThemXe();
+                ThemHang.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
     }
 }
  

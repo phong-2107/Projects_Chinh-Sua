@@ -13,6 +13,7 @@ namespace DAL.Entities
         }
 
         public virtual DbSet<CT_AnhXe> CT_AnhXe { get; set; }
+        public virtual DbSet<CT_HOPDONG> CT_HOPDONG { get; set; }
         public virtual DbSet<CT_MauXe> CT_MauXe { get; set; }
         public virtual DbSet<CT_PNhap> CT_PNhap { get; set; }
         public virtual DbSet<HangSX> HangSXes { get; set; }
@@ -42,6 +43,18 @@ namespace DAL.Entities
                 .HasForeignKey(e => new { e.IDMAUXE, e.IDMAU })
                 .WillCascadeOnDelete(false);
 
+            modelBuilder.Entity<CT_HOPDONG>()
+                .Property(e => e.IDHD)
+                .IsFixedLength();
+
+            modelBuilder.Entity<CT_HOPDONG>()
+                .Property(e => e.SOKHUNG)
+                .IsFixedLength();
+
+            modelBuilder.Entity<CT_HOPDONG>()
+                .Property(e => e.IDCTHD)
+                .IsFixedLength();
+
             modelBuilder.Entity<CT_MauXe>()
                 .Property(e => e.SOKHUNG)
                 .IsFixedLength();
@@ -63,9 +76,9 @@ namespace DAL.Entities
                 .IsFixedLength();
 
             modelBuilder.Entity<CT_MauXe>()
-                .HasMany(e => e.HopDongs)
-                .WithMany(e => e.CT_MauXe)
-                .Map(m => m.ToTable("CT_HopDong").MapLeftKey("SOKHUNG").MapRightKey("IDHD"));
+                .HasMany(e => e.CT_HOPDONG)
+                .WithRequired(e => e.CT_MauXe)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<CT_PNhap>()
                 .Property(e => e.IDMAUXE)
@@ -103,6 +116,11 @@ namespace DAL.Entities
             modelBuilder.Entity<HopDong>()
                 .Property(e => e.TONGTT)
                 .HasPrecision(18, 0);
+
+            modelBuilder.Entity<HopDong>()
+                .HasMany(e => e.CT_HOPDONG)
+                .WithRequired(e => e.HopDong)
+                .WillCascadeOnDelete(false);
 
             modelBuilder.Entity<KhachHang>()
                 .Property(e => e.IDKH)
