@@ -99,6 +99,14 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.dgvMotorcycles = new Guna.UI.WinForms.GunaDataGridView();
+            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLoaiCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.check = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.pnTask = new System.Windows.Forms.Panel();
             this.pnTonKho = new System.Windows.Forms.Panel();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
@@ -144,15 +152,6 @@
             this.Import = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
-            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLoaiCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.check = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.TimKiem = new GUI.borderRadius.borderMenutrip();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -728,7 +727,7 @@
             this.btnExport.ForeColor = System.Drawing.Color.White;
             this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnExport.Location = new System.Drawing.Point(359, 12);
+            this.btnExport.Location = new System.Drawing.Point(346, 11);
             this.btnExport.MinimumSize = new System.Drawing.Size(0, 42);
             this.btnExport.Name = "btnExport";
             this.btnExport.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
@@ -953,6 +952,63 @@
             this.dgvMotorcycles.ThemeStyle.RowsStyle.Height = 35;
             this.dgvMotorcycles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             this.dgvMotorcycles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            // 
+            // MaXe
+            // 
+            this.MaXe.HeaderText = "Mã sản phẩm";
+            this.MaXe.MinimumWidth = 6;
+            this.MaXe.Name = "MaXe";
+            this.MaXe.ReadOnly = true;
+            // 
+            // TenXe
+            // 
+            this.TenXe.HeaderText = "Tên sản phẩm";
+            this.TenXe.MinimumWidth = 6;
+            this.TenXe.Name = "TenXe";
+            this.TenXe.ReadOnly = true;
+            // 
+            // phanKhoi
+            // 
+            this.phanKhoi.HeaderText = "Phân Khối";
+            this.phanKhoi.MinimumWidth = 6;
+            this.phanKhoi.Name = "phanKhoi";
+            this.phanKhoi.ReadOnly = true;
+            // 
+            // btnLoaiCon
+            // 
+            this.btnLoaiCon.HeaderText = "Loại Côn";
+            this.btnLoaiCon.MinimumWidth = 6;
+            this.btnLoaiCon.Name = "btnLoaiCon";
+            this.btnLoaiCon.ReadOnly = true;
+            // 
+            // btnSL
+            // 
+            this.btnSL.HeaderText = "Số lượng";
+            this.btnSL.MinimumWidth = 6;
+            this.btnSL.Name = "btnSL";
+            this.btnSL.ReadOnly = true;
+            // 
+            // btnGiaNhap
+            // 
+            this.btnGiaNhap.HeaderText = "Giá Nhập";
+            this.btnGiaNhap.MinimumWidth = 6;
+            this.btnGiaNhap.Name = "btnGiaNhap";
+            this.btnGiaNhap.ReadOnly = true;
+            // 
+            // btnGiaBan
+            // 
+            this.btnGiaBan.HeaderText = "Giá bán";
+            this.btnGiaBan.MinimumWidth = 6;
+            this.btnGiaBan.Name = "btnGiaBan";
+            this.btnGiaBan.ReadOnly = true;
+            // 
+            // check
+            // 
+            this.check.HeaderText = "Check";
+            this.check.MinimumWidth = 6;
+            this.check.Name = "check";
+            this.check.ReadOnly = true;
+            this.check.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // pnTask
             // 
@@ -1502,77 +1558,6 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(186, 40);
             this.toolStripMenuItem8.Text = "     Báo cáo";
             // 
-            // MaXe
-            // 
-            this.MaXe.HeaderText = "Mã sản phẩm";
-            this.MaXe.MinimumWidth = 6;
-            this.MaXe.Name = "MaXe";
-            this.MaXe.ReadOnly = true;
-            // 
-            // TenXe
-            // 
-            this.TenXe.HeaderText = "Tên sản phẩm";
-            this.TenXe.MinimumWidth = 6;
-            this.TenXe.Name = "TenXe";
-            this.TenXe.ReadOnly = true;
-            // 
-            // phanKhoi
-            // 
-            this.phanKhoi.HeaderText = "Phân Khối";
-            this.phanKhoi.MinimumWidth = 6;
-            this.phanKhoi.Name = "phanKhoi";
-            this.phanKhoi.ReadOnly = true;
-            // 
-            // btnLoaiCon
-            // 
-            this.btnLoaiCon.HeaderText = "Loại Côn";
-            this.btnLoaiCon.MinimumWidth = 6;
-            this.btnLoaiCon.Name = "btnLoaiCon";
-            this.btnLoaiCon.ReadOnly = true;
-            // 
-            // btnSL
-            // 
-            this.btnSL.HeaderText = "Số lượng";
-            this.btnSL.MinimumWidth = 6;
-            this.btnSL.Name = "btnSL";
-            this.btnSL.ReadOnly = true;
-            // 
-            // btnGiaNhap
-            // 
-            this.btnGiaNhap.HeaderText = "Giá Nhập";
-            this.btnGiaNhap.MinimumWidth = 6;
-            this.btnGiaNhap.Name = "btnGiaNhap";
-            this.btnGiaNhap.ReadOnly = true;
-            // 
-            // btnGiaBan
-            // 
-            this.btnGiaBan.HeaderText = "Giá bán";
-            this.btnGiaBan.MinimumWidth = 6;
-            this.btnGiaBan.Name = "btnGiaBan";
-            this.btnGiaBan.ReadOnly = true;
-            // 
-            // check
-            // 
-            this.check.HeaderText = "Check";
-            this.check.MinimumWidth = 6;
-            this.check.Name = "check";
-            this.check.ReadOnly = true;
-            this.check.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // TimKiem
-            // 
-            this.TimKiem.Name = "TimKiem";
-            this.TimKiem.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.TimKiem.RenderStyle.BorderColor = System.Drawing.Color.Gainsboro;
-            this.TimKiem.RenderStyle.ColorTable = null;
-            this.TimKiem.RenderStyle.RoundedEdges = true;
-            this.TimKiem.RenderStyle.SelectionArrowColor = System.Drawing.Color.White;
-            this.TimKiem.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.TimKiem.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.TimKiem.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.TimKiem.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.SystemDefault;
-            this.TimKiem.Size = new System.Drawing.Size(61, 4);
-            // 
             // FormSanPham
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1738,7 +1723,6 @@
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView dgvMotorcycles;
         private Guna.UI.WinForms.GunaPanel pnbtn;
-        private borderRadius.borderMenutrip TimKiem;
         private Guna.UI.WinForms.GunaCircleButton btnShowHang;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;

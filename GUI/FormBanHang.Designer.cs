@@ -483,7 +483,7 @@
             this.tableLayoutPanel2.Controls.Add(this.gunaPanel10, 0, 1);
             this.tableLayoutPanel2.Controls.Add(this.gunaPanel9, 0, 0);
             this.tableLayoutPanel2.Controls.Add(this.gunaPanel13, 0, 4);
-            this.tableLayoutPanel2.Location = new System.Drawing.Point(20, 33);
+            this.tableLayoutPanel2.Location = new System.Drawing.Point(213, 48);
             this.tableLayoutPanel2.Name = "tableLayoutPanel2";
             this.tableLayoutPanel2.RowCount = 5;
             this.tableLayoutPanel2.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 20F));
