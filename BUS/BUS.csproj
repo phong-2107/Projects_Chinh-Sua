@@ -51,11 +51,14 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CTHopDongService.cs" />
+    <Compile Include="HopDongService.cs" />
     <Compile Include="KhachHangService.cs" />
     <Compile Include="LoginService.cs" />
     <Compile Include="MauSacService.cs" />
     <Compile Include="MauXeService.cs" />
     <Compile Include="NhanVienService.cs" />
+    <Compile Include="PhieuNhapService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

@@ -80,7 +80,14 @@ namespace GUI
 
         private void ShowInfoMotor(MauXe xe)
         {
+<<<<<<< HEAD
          
+=======
+            lbID.Text = xe.IDMAUXE;
+            lbName.Text = xe.TENMAUXE;
+            lbPK.Text = xe.PHANKHOI.ToString() + " CC";
+
+>>>>>>> 0db3bb157207a312b815ac945ac9810aeb29b7f5
         }
 
         #endregion

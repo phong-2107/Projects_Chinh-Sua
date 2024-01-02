@@ -130,10 +130,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
             this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
-            this.ThaoTac = new Guna.UI.WinForms.GunaContextMenuStrip();
-            this.btnSanPhamItems = new System.Windows.Forms.ToolStripMenuItem();
-            this.lôSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.tồnKhoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.Loc = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
@@ -181,7 +177,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
             this.flyoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
-            this.ThaoTac.SuspendLayout();
             this.Loc.SuspendLayout();
             this.Find.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
@@ -727,7 +722,7 @@
             this.btnExport.ForeColor = System.Drawing.Color.White;
             this.btnExport.Image = ((System.Drawing.Image)(resources.GetObject("btnExport.Image")));
             this.btnExport.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnExport.Location = new System.Drawing.Point(346, 11);
+            this.btnExport.Location = new System.Drawing.Point(373, 13);
             this.btnExport.MinimumSize = new System.Drawing.Size(0, 42);
             this.btnExport.Name = "btnExport";
             this.btnExport.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
@@ -755,7 +750,7 @@
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
             this.btnAddnew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddnew.Image")));
             this.btnAddnew.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddnew.Location = new System.Drawing.Point(189, 11);
+            this.btnAddnew.Location = new System.Drawing.Point(197, 13);
             this.btnAddnew.MinimumSize = new System.Drawing.Size(0, 42);
             this.btnAddnew.Name = "btnAddnew";
             this.btnAddnew.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
@@ -1321,52 +1316,6 @@
             this.flyoutPanelControl1.Size = new System.Drawing.Size(8, 8);
             this.flyoutPanelControl1.TabIndex = 0;
             // 
-            // ThaoTac
-            // 
-            this.ThaoTac.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.ThaoTac.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThaoTac.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.ThaoTac.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.btnSanPhamItems,
-            this.lôSảnPhẩmToolStripMenuItem,
-            this.tồnKhoToolStripMenuItem});
-            this.ThaoTac.Name = "SanPham";
-            this.ThaoTac.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.ThaoTac.RenderStyle.BorderColor = System.Drawing.Color.Transparent;
-            this.ThaoTac.RenderStyle.ColorTable = null;
-            this.ThaoTac.RenderStyle.RoundedEdges = false;
-            this.ThaoTac.RenderStyle.SelectionArrowColor = System.Drawing.Color.Transparent;
-            this.ThaoTac.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(120)))), ((int)(((byte)(254)))));
-            this.ThaoTac.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.ThaoTac.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.ThaoTac.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            this.ThaoTac.Size = new System.Drawing.Size(192, 106);
-            // 
-            // btnSanPhamItems
-            // 
-            this.btnSanPhamItems.Image = ((System.Drawing.Image)(resources.GetObject("btnSanPhamItems.Image")));
-            this.btnSanPhamItems.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btnSanPhamItems.Name = "btnSanPhamItems";
-            this.btnSanPhamItems.Padding = new System.Windows.Forms.Padding(5);
-            this.btnSanPhamItems.Size = new System.Drawing.Size(201, 34);
-            this.btnSanPhamItems.Text = "     Sản Phẩm";
-            // 
-            // lôSảnPhẩmToolStripMenuItem
-            // 
-            this.lôSảnPhẩmToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("lôSảnPhẩmToolStripMenuItem.Image")));
-            this.lôSảnPhẩmToolStripMenuItem.Name = "lôSảnPhẩmToolStripMenuItem";
-            this.lôSảnPhẩmToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
-            this.lôSảnPhẩmToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
-            this.lôSảnPhẩmToolStripMenuItem.Text = "     Lô sản phẩm";
-            // 
-            // tồnKhoToolStripMenuItem
-            // 
-            this.tồnKhoToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("tồnKhoToolStripMenuItem.Image")));
-            this.tồnKhoToolStripMenuItem.Name = "tồnKhoToolStripMenuItem";
-            this.tồnKhoToolStripMenuItem.Padding = new System.Windows.Forms.Padding(5);
-            this.tồnKhoToolStripMenuItem.Size = new System.Drawing.Size(201, 34);
-            this.tồnKhoToolStripMenuItem.Text = "     Tồn Kho";
-            // 
             // Loc
             // 
             this.Loc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -1495,6 +1444,7 @@
             this.btnNhapXe.Padding = new System.Windows.Forms.Padding(10, 8, 20, 8);
             this.btnNhapXe.Size = new System.Drawing.Size(249, 40);
             this.btnNhapXe.Text = "     Phieu nhập hàng";
+            this.btnNhapXe.Click += new System.EventHandler(this.btnNhapXe_Click);
             // 
             // ThemMoi
             // 
@@ -1607,7 +1557,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
             this.flyoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
-            this.ThaoTac.ResumeLayout(false);
             this.Loc.ResumeLayout(false);
             this.Find.ResumeLayout(false);
             this.Find.PerformLayout();
@@ -1666,10 +1615,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbProduct;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaContextMenuStrip ThaoTac;
-        private System.Windows.Forms.ToolStripMenuItem btnSanPhamItems;
-        private System.Windows.Forms.ToolStripMenuItem lôSảnPhẩmToolStripMenuItem;
-        private System.Windows.Forms.ToolStripMenuItem tồnKhoToolStripMenuItem;
         private Guna.UI.WinForms.GunaContextMenuStrip Loc;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;

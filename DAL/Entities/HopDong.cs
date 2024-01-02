@@ -12,7 +12,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public HopDong()
         {
-            CT_MauXe = new HashSet<CT_MauXe>();
+            CT_HOPDONG = new HashSet<CT_HOPDONG>();
         }
 
         [Key]
@@ -38,11 +38,11 @@ namespace DAL.Entities
 
         public decimal? TONGTT { get; set; }
 
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<CT_HOPDONG> CT_HOPDONG { get; set; }
+
         public virtual KhachHang KhachHang { get; set; }
 
         public virtual NhanVien NhanVien { get; set; }
-
-        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<CT_MauXe> CT_MauXe { get; set; }
     }
 }

@@ -11,7 +11,7 @@ namespace DAL.Entities
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
         public CT_MauXe()
         {
-            HopDongs = new HashSet<HopDong>();
+            CT_HOPDONG = new HashSet<CT_HOPDONG>();
         }
 
         [Key]
@@ -38,9 +38,9 @@ namespace DAL.Entities
 
         public virtual CT_AnhXe CT_AnhXe { get; set; }
 
-        public virtual PhieuNhap PhieuNhap { get; set; }
-
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
-        public virtual ICollection<HopDong> HopDongs { get; set; }
+        public virtual ICollection<CT_HOPDONG> CT_HOPDONG { get; set; }
+
+        public virtual PhieuNhap PhieuNhap { get; set; }
     }
 }

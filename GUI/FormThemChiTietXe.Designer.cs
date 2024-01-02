@@ -52,10 +52,9 @@
             this.guna2ComboBox2 = new Guna.UI2.WinForms.Guna2ComboBox();
             this.gunaLabel4 = new Guna.UI.WinForms.GunaLabel();
             this.gdvHoaDon = new Guna.UI.WinForms.GunaDataGridView();
+            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.MaHoaDon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Price = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ViTri = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             ((System.ComponentModel.ISupportInitialize)(this.gdvHoaDon)).BeginInit();
             this.gunaShadowPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -380,8 +379,7 @@
             this.gdvHoaDon.ColumnHeadersHeight = 50;
             this.gdvHoaDon.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaHoaDon,
-            this.Price,
-            this.ViTri});
+            this.Price});
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -433,24 +431,6 @@
             this.gdvHoaDon.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             this.gdvHoaDon.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             // 
-            // MaHoaDon
-            // 
-            this.MaHoaDon.HeaderText = "Số khung";
-            this.MaHoaDon.Name = "MaHoaDon";
-            this.MaHoaDon.ReadOnly = true;
-            // 
-            // Price
-            // 
-            this.Price.HeaderText = "Số Máy";
-            this.Price.Name = "Price";
-            this.Price.ReadOnly = true;
-            // 
-            // ViTri
-            // 
-            this.ViTri.HeaderText = "Vị trí";
-            this.ViTri.Name = "ViTri";
-            this.ViTri.ReadOnly = true;
-            // 
             // gunaShadowPanel1
             // 
             this.gunaShadowPanel1.BackColor = System.Drawing.Color.Transparent;
@@ -465,6 +445,18 @@
             this.gunaShadowPanel1.ShadowShift = 3;
             this.gunaShadowPanel1.Size = new System.Drawing.Size(461, 354);
             this.gunaShadowPanel1.TabIndex = 110;
+            // 
+            // MaHoaDon
+            // 
+            this.MaHoaDon.HeaderText = "Số khung";
+            this.MaHoaDon.Name = "MaHoaDon";
+            this.MaHoaDon.ReadOnly = true;
+            // 
+            // Price
+            // 
+            this.Price.HeaderText = "Số Máy";
+            this.Price.Name = "Price";
+            this.Price.ReadOnly = true;
             // 
             // FormThemChiTietXe
             // 
@@ -524,9 +516,8 @@
         private Guna.UI2.WinForms.Guna2ComboBox guna2ComboBox2;
         private Guna.UI.WinForms.GunaLabel gunaLabel4;
         private Guna.UI.WinForms.GunaDataGridView gdvHoaDon;
+        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaHoaDon;
         private System.Windows.Forms.DataGridViewTextBoxColumn Price;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ViTri;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel1;
     }
 }
