@@ -121,23 +121,6 @@ namespace GUI
             ThemMoi.Show(btnAddnew, 0, btnAddnew.Height);
         }
 
-        private void btnDFTime_Click(object sender, EventArgs e)
-        {
-            if (timePickerDf.Visible == true)
-            {
-                timePickerDf.Visible = false;
-            }
-            else
-            {
-                timePickerDf.Visible = true;
-            }
-        }
-
-        private void btImport_Click(object sender, EventArgs e)
-        {
-            Import.Show(btImport, 0, btImport.Height);
-        }
-
         private void btnSearch_Click(object sender, EventArgs e)
         {
             Find.Show(pnSearch, 0, pnSearch.Height);
@@ -182,15 +165,83 @@ namespace GUI
             ShowPanel(pnTonKho);
         }
 
-        private void btnShowTime_Click(object sender, EventArgs e)
-        {
-            ShowPanel(pnTime);
-        }
-
         private void btnHome_Click(object sender, EventArgs e)
         {
             FormTongQuan demo = new FormTongQuan();
             openChildForm(demo);
+        }
+        String currenthang = null;
+
+        private void gunaRadioButton9_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gunaRadioButton3.Checked)
+                BindGrid(mauXeService.getHangconhang(gunaRadioButton9.Text));
+            else if (gunaRadioButton8.Checked)
+            {
+                BindGrid(mauXeService.getHanghethang(gunaRadioButton9.Text));
+            }
+            if (gunaRadioButton3.Checked == false && gunaRadioButton8.Checked == false)
+                BindGrid(mauXeService.getHang(gunaRadioButton10.Text));
+            currenthang = gunaRadioButton9.Text;
+        }
+
+        private void gunaRadioButton10_CheckedChanged(object sender, EventArgs e)
+        {
+            if(gunaRadioButton3.Checked)
+                BindGrid(mauXeService.getHangconhang(gunaRadioButton10.Text));
+            else if (gunaRadioButton8.Checked)
+            {
+                BindGrid(mauXeService.getHanghethang(gunaRadioButton10.Text));
+            }
+            if(gunaRadioButton3.Checked == false && gunaRadioButton8.Checked == false)   
+                BindGrid(mauXeService.getHang(gunaRadioButton10.Text));
+            currenthang = gunaRadioButton10.Text;
+        }
+
+        private void gunaRadioButton2_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gunaRadioButton3.Checked)
+                BindGrid(mauXeService.getHangconhang(gunaRadioButton2.Text));
+            else if (gunaRadioButton8.Checked)
+            {
+                BindGrid(mauXeService.getHanghethang(gunaRadioButton2.Text));
+            }
+            if (gunaRadioButton3.Checked == false && gunaRadioButton8.Checked == false)
+                BindGrid(mauXeService.getHang(gunaRadioButton2.Text));
+            currenthang = gunaRadioButton2.Text;
+        }
+
+        private void gunaRadioButton1_CheckedChanged(object sender, EventArgs e)
+        {
+            if (gunaRadioButton3.Checked)
+                BindGrid(mauXeService.getHangconhang(gunaRadioButton1.Text));
+            else if (gunaRadioButton8.Checked)
+            {
+                BindGrid(mauXeService.getHanghethang(gunaRadioButton1.Text));
+            }
+            if (gunaRadioButton3.Checked == false && gunaRadioButton8.Checked == false)
+                BindGrid(mauXeService.getHang(gunaRadioButton1.Text));
+            currenthang = gunaRadioButton1.Text;
+        }
+
+        private void gunaRadioButton3_CheckedChanged(object sender, EventArgs e)
+        {
+            BindGrid(mauXeService.getHangconhang(currenthang));
+        }
+
+        private void gunaRadioButton8_CheckedChanged(object sender, EventArgs e)
+        {
+            BindGrid(mauXeService.getHanghethang(currenthang));
+        }
+
+        private void gunaRadioButton4_CheckedChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void pnTask_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

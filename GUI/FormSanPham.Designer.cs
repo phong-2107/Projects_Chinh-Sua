@@ -29,11 +29,11 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormSanPham));
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.add = new System.Windows.Forms.Button();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewImageColumn();
@@ -82,11 +82,16 @@
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel4 = new System.Windows.Forms.Panel();
             this.gunaElipsePanel1 = new Guna.UI.WinForms.GunaElipsePanel();
+            this.panel5 = new System.Windows.Forms.Panel();
+            this.lbListProduct = new System.Windows.Forms.Label();
+            this.btnHome = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.lbProduct = new System.Windows.Forms.Label();
             this.gunaPanel1 = new Guna.UI.WinForms.GunaPanel();
             this.pnbtn = new Guna.UI.WinForms.GunaPanel();
             this.btnExport = new Guna.UI.WinForms.GunaButton();
             this.btnAddnew = new Guna.UI.WinForms.GunaButton();
-            this.btImport = new Guna.UI.WinForms.GunaButton();
             this.pnSearch = new Guna.UI.WinForms.GunaElipsePanel();
             this.txtSearch = new Guna.UI2.WinForms.Guna2TextBox();
             this.btnSearch = new Guna.UI.WinForms.GunaButton();
@@ -94,28 +99,7 @@
             this.panel6 = new System.Windows.Forms.Panel();
             this.gunaElipsePanel2 = new Guna.UI.WinForms.GunaElipsePanel();
             this.dgvMotorcycles = new Guna.UI.WinForms.GunaDataGridView();
-            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnLoaiCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btnGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.check = new System.Windows.Forms.DataGridViewCheckBoxColumn();
             this.pnTask = new System.Windows.Forms.Panel();
-            this.pnTime = new System.Windows.Forms.Panel();
-            this.gunaShadowPanel3 = new Guna.UI.WinForms.GunaShadowPanel();
-            this.gunaElipsePanel9 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.gunaElipsePanel10 = new Guna.UI.WinForms.GunaElipsePanel();
-            this.label6 = new System.Windows.Forms.Label();
-            this.btnShowTime = new Guna.UI.WinForms.GunaCircleButton();
-            this.panel16 = new System.Windows.Forms.Panel();
-            this.panel17 = new System.Windows.Forms.Panel();
-            this.btnDFTime = new Guna.UI.WinForms.GunaButton();
-            this.timePickerDf = new Guna.UI.WinForms.GunaDateTimePicker();
-            this.gunaButton9 = new Guna.UI.WinForms.GunaButton();
-            this.gunaRadioButton5 = new Guna.UI.WinForms.GunaRadioButton();
-            this.gunaRadioButton6 = new Guna.UI.WinForms.GunaRadioButton();
             this.pnTonKho = new System.Windows.Forms.Panel();
             this.gunaShadowPanel2 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaElipsePanel3 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -123,9 +107,7 @@
             this.label5 = new System.Windows.Forms.Label();
             this.btnShowTonKho = new Guna.UI.WinForms.GunaCircleButton();
             this.gunaRadioButton8 = new Guna.UI.WinForms.GunaRadioButton();
-            this.gunaRadioButton7 = new Guna.UI.WinForms.GunaRadioButton();
             this.gunaRadioButton3 = new Guna.UI.WinForms.GunaRadioButton();
-            this.gunaRadioButton4 = new Guna.UI.WinForms.GunaRadioButton();
             this.pnHangXe = new System.Windows.Forms.Panel();
             this.gunaShadowPanel1 = new Guna.UI.WinForms.GunaShadowPanel();
             this.gunaElipsePanel4 = new Guna.UI.WinForms.GunaElipsePanel();
@@ -140,12 +122,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
             this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
-            this.panel5 = new System.Windows.Forms.Panel();
-            this.lbListProduct = new System.Windows.Forms.Label();
-            this.btnHome = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label1 = new System.Windows.Forms.Label();
-            this.lbProduct = new System.Windows.Forms.Label();
             this.ThaoTac = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.btnSanPhamItems = new System.Windows.Forms.ToolStripMenuItem();
             this.lôSảnPhẩmToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -163,12 +139,19 @@
             this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.btnThemSanPham = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem2 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem3 = new System.Windows.Forms.ToolStripMenuItem();
+            this.btnNhapXe = new System.Windows.Forms.ToolStripMenuItem();
             this.ThemMoi = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.Import = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.toolStripMenuItem7 = new System.Windows.Forms.ToolStripMenuItem();
             this.toolStripMenuItem8 = new System.Windows.Forms.ToolStripMenuItem();
+            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnLoaiCon = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnSL = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGiaNhap = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.btnGiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.check = new System.Windows.Forms.DataGridViewComboBoxColumn();
             this.TimKiem = new GUI.borderRadius.borderMenutrip();
             this.panel2.SuspendLayout();
             this.panel8.SuspendLayout();
@@ -177,6 +160,8 @@
             this.tableLayoutPanel1.SuspendLayout();
             this.panel4.SuspendLayout();
             this.gunaElipsePanel1.SuspendLayout();
+            this.panel5.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.gunaPanel1.SuspendLayout();
             this.pnbtn.SuspendLayout();
             this.pnSearch.SuspendLayout();
@@ -185,10 +170,6 @@
             this.gunaElipsePanel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMotorcycles)).BeginInit();
             this.pnTask.SuspendLayout();
-            this.pnTime.SuspendLayout();
-            this.gunaShadowPanel3.SuspendLayout();
-            this.gunaElipsePanel9.SuspendLayout();
-            this.gunaElipsePanel10.SuspendLayout();
             this.pnTonKho.SuspendLayout();
             this.gunaShadowPanel2.SuspendLayout();
             this.gunaElipsePanel3.SuspendLayout();
@@ -201,8 +182,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
             this.flyoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
-            this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).BeginInit();
             this.ThaoTac.SuspendLayout();
             this.Loc.SuspendLayout();
             this.Find.SuspendLayout();
@@ -645,6 +624,78 @@
             this.gunaElipsePanel1.Size = new System.Drawing.Size(1235, 115);
             this.gunaElipsePanel1.TabIndex = 0;
             // 
+            // panel5
+            // 
+            this.panel5.Controls.Add(this.lbListProduct);
+            this.panel5.Controls.Add(this.btnHome);
+            this.panel5.Controls.Add(this.label4);
+            this.panel5.Controls.Add(this.label1);
+            this.panel5.Controls.Add(this.lbProduct);
+            this.panel5.Location = new System.Drawing.Point(5, 5);
+            this.panel5.Margin = new System.Windows.Forms.Padding(0);
+            this.panel5.Name = "panel5";
+            this.panel5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
+            this.panel5.Size = new System.Drawing.Size(319, 37);
+            this.panel5.TabIndex = 1;
+            // 
+            // lbListProduct
+            // 
+            this.lbListProduct.AutoSize = true;
+            this.lbListProduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbListProduct.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbListProduct.Location = new System.Drawing.Point(148, 10);
+            this.lbListProduct.Margin = new System.Windows.Forms.Padding(0);
+            this.lbListProduct.Name = "lbListProduct";
+            this.lbListProduct.Size = new System.Drawing.Size(153, 20);
+            this.lbListProduct.TabIndex = 4;
+            this.lbListProduct.Text = "Danh sách sản phẩm";
+            // 
+            // btnHome
+            // 
+            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
+            this.btnHome.Location = new System.Drawing.Point(12, 11);
+            this.btnHome.Name = "btnHome";
+            this.btnHome.Size = new System.Drawing.Size(20, 20);
+            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.btnHome.TabIndex = 0;
+            this.btnHome.TabStop = false;
+            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label4.Location = new System.Drawing.Point(129, 11);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(16, 20);
+            this.label4.TabIndex = 3;
+            this.label4.Text = "/";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.label1.Location = new System.Drawing.Point(38, 13);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(14, 17);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "/";
+            // 
+            // lbProduct
+            // 
+            this.lbProduct.AutoSize = true;
+            this.lbProduct.Cursor = System.Windows.Forms.Cursors.Hand;
+            this.lbProduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lbProduct.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.lbProduct.Location = new System.Drawing.Point(55, 11);
+            this.lbProduct.Name = "lbProduct";
+            this.lbProduct.Size = new System.Drawing.Size(75, 20);
+            this.lbProduct.TabIndex = 2;
+            this.lbProduct.Text = "Sản phẩm";
+            // 
             // gunaPanel1
             // 
             this.gunaPanel1.Controls.Add(this.pnbtn);
@@ -659,7 +710,6 @@
             // 
             this.pnbtn.Controls.Add(this.btnExport);
             this.pnbtn.Controls.Add(this.btnAddnew);
-            this.pnbtn.Controls.Add(this.btImport);
             this.pnbtn.Location = new System.Drawing.Point(61, 37);
             this.pnbtn.Name = "pnbtn";
             this.pnbtn.Size = new System.Drawing.Size(500, 58);
@@ -706,7 +756,7 @@
             this.btnAddnew.ForeColor = System.Drawing.Color.White;
             this.btnAddnew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddnew.Image")));
             this.btnAddnew.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnAddnew.Location = new System.Drawing.Point(46, 12);
+            this.btnAddnew.Location = new System.Drawing.Point(189, 11);
             this.btnAddnew.MinimumSize = new System.Drawing.Size(0, 42);
             this.btnAddnew.Name = "btnAddnew";
             this.btnAddnew.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
@@ -721,35 +771,6 @@
             this.btnAddnew.Text = "   Thêm mới";
             this.btnAddnew.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
             this.btnAddnew.Click += new System.EventHandler(this.btnAddnew_Click);
-            // 
-            // btImport
-            // 
-            this.btImport.AnimationHoverSpeed = 0.07F;
-            this.btImport.AnimationSpeed = 0.03F;
-            this.btImport.BackColor = System.Drawing.Color.Transparent;
-            this.btImport.BaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
-            this.btImport.BorderColor = System.Drawing.Color.Black;
-            this.btImport.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btImport.FocusedColor = System.Drawing.Color.Empty;
-            this.btImport.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btImport.ForeColor = System.Drawing.Color.White;
-            this.btImport.Image = ((System.Drawing.Image)(resources.GetObject("btImport.Image")));
-            this.btImport.ImageSize = new System.Drawing.Size(20, 20);
-            this.btImport.Location = new System.Drawing.Point(215, 12);
-            this.btImport.MinimumSize = new System.Drawing.Size(0, 42);
-            this.btImport.Name = "btImport";
-            this.btImport.OnHoverBaseColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(146)))), ((int)(((byte)(50)))));
-            this.btImport.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btImport.OnHoverForeColor = System.Drawing.Color.White;
-            this.btImport.OnHoverImage = null;
-            this.btImport.OnPressedColor = System.Drawing.Color.Black;
-            this.btImport.Padding = new System.Windows.Forms.Padding(3);
-            this.btImport.Radius = 5;
-            this.btImport.Size = new System.Drawing.Size(124, 42);
-            this.btImport.TabIndex = 5;
-            this.btImport.Text = "   Import";
-            this.btImport.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btImport.Click += new System.EventHandler(this.btImport_Click);
             // 
             // pnSearch
             // 
@@ -856,22 +877,22 @@
             // 
             this.dgvMotorcycles.AllowUserToAddRows = false;
             this.dgvMotorcycles.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.White;
-            this.dgvMotorcycles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.dgvMotorcycles.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.dgvMotorcycles.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.dgvMotorcycles.BackgroundColor = System.Drawing.Color.White;
             this.dgvMotorcycles.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMotorcycles.CellBorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.None;
             this.dgvMotorcycles.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.Black;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMotorcycles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.Black;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMotorcycles.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.dgvMotorcycles.ColumnHeadersHeight = 50;
             this.dgvMotorcycles.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaXe,
@@ -882,28 +903,28 @@
             this.btnGiaNhap,
             this.btnGiaBan,
             this.check});
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvMotorcycles.DefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvMotorcycles.DefaultCellStyle = dataGridViewCellStyle3;
             this.dgvMotorcycles.Dock = System.Windows.Forms.DockStyle.Fill;
             this.dgvMotorcycles.EnableHeadersVisualStyles = false;
             this.dgvMotorcycles.GridColor = System.Drawing.Color.White;
             this.dgvMotorcycles.Location = new System.Drawing.Point(10, 10);
             this.dgvMotorcycles.Name = "dgvMotorcycles";
             this.dgvMotorcycles.ReadOnly = true;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.dgvMotorcycles.RowHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle4.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle4.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle4.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle4.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.dgvMotorcycles.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.dgvMotorcycles.RowHeadersVisible = false;
             this.dgvMotorcycles.RowHeadersWidth = 45;
             this.dgvMotorcycles.RowTemplate.Height = 35;
@@ -933,66 +954,8 @@
             this.dgvMotorcycles.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.WhiteSmoke;
             this.dgvMotorcycles.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             // 
-            // MaXe
-            // 
-            this.MaXe.HeaderText = "Mã sản phẩm";
-            this.MaXe.MinimumWidth = 6;
-            this.MaXe.Name = "MaXe";
-            this.MaXe.ReadOnly = true;
-            // 
-            // TenXe
-            // 
-            this.TenXe.HeaderText = "Tên sản phẩm";
-            this.TenXe.MinimumWidth = 6;
-            this.TenXe.Name = "TenXe";
-            this.TenXe.ReadOnly = true;
-            // 
-            // phanKhoi
-            // 
-            this.phanKhoi.HeaderText = "Phân Khối";
-            this.phanKhoi.MinimumWidth = 6;
-            this.phanKhoi.Name = "phanKhoi";
-            this.phanKhoi.ReadOnly = true;
-            // 
-            // btnLoaiCon
-            // 
-            this.btnLoaiCon.HeaderText = "Loại Côn";
-            this.btnLoaiCon.MinimumWidth = 6;
-            this.btnLoaiCon.Name = "btnLoaiCon";
-            this.btnLoaiCon.ReadOnly = true;
-            // 
-            // btnSL
-            // 
-            this.btnSL.HeaderText = "Số lượng";
-            this.btnSL.MinimumWidth = 6;
-            this.btnSL.Name = "btnSL";
-            this.btnSL.ReadOnly = true;
-            // 
-            // btnGiaNhap
-            // 
-            this.btnGiaNhap.HeaderText = "Giá Nhập";
-            this.btnGiaNhap.MinimumWidth = 6;
-            this.btnGiaNhap.Name = "btnGiaNhap";
-            this.btnGiaNhap.ReadOnly = true;
-            // 
-            // btnGiaBan
-            // 
-            this.btnGiaBan.HeaderText = "Giá bán";
-            this.btnGiaBan.MinimumWidth = 6;
-            this.btnGiaBan.Name = "btnGiaBan";
-            this.btnGiaBan.ReadOnly = true;
-            // 
-            // check
-            // 
-            this.check.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.check.HeaderText = "Check";
-            this.check.MinimumWidth = 6;
-            this.check.Name = "check";
-            this.check.ReadOnly = true;
-            // 
             // pnTask
             // 
-            this.pnTask.Controls.Add(this.pnTime);
             this.pnTask.Controls.Add(this.pnTonKho);
             this.pnTask.Controls.Add(this.pnHangXe);
             this.pnTask.Controls.Add(this.panel10);
@@ -1002,219 +965,7 @@
             this.pnTask.Name = "pnTask";
             this.pnTask.Size = new System.Drawing.Size(219, 885);
             this.pnTask.TabIndex = 1;
-            // 
-            // pnTime
-            // 
-            this.pnTime.Controls.Add(this.gunaShadowPanel3);
-            this.pnTime.Dock = System.Windows.Forms.DockStyle.Top;
-            this.pnTime.Location = new System.Drawing.Point(0, 494);
-            this.pnTime.Name = "pnTime";
-            this.pnTime.Padding = new System.Windows.Forms.Padding(10);
-            this.pnTime.Size = new System.Drawing.Size(219, 220);
-            this.pnTime.TabIndex = 16;
-            // 
-            // gunaShadowPanel3
-            // 
-            this.gunaShadowPanel3.BackColor = System.Drawing.Color.Transparent;
-            this.gunaShadowPanel3.BaseColor = System.Drawing.Color.White;
-            this.gunaShadowPanel3.Controls.Add(this.gunaElipsePanel9);
-            this.gunaShadowPanel3.Controls.Add(this.panel16);
-            this.gunaShadowPanel3.Controls.Add(this.panel17);
-            this.gunaShadowPanel3.Controls.Add(this.btnDFTime);
-            this.gunaShadowPanel3.Controls.Add(this.timePickerDf);
-            this.gunaShadowPanel3.Controls.Add(this.gunaButton9);
-            this.gunaShadowPanel3.Controls.Add(this.gunaRadioButton5);
-            this.gunaShadowPanel3.Controls.Add(this.gunaRadioButton6);
-            this.gunaShadowPanel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gunaShadowPanel3.Location = new System.Drawing.Point(10, 10);
-            this.gunaShadowPanel3.Name = "gunaShadowPanel3";
-            this.gunaShadowPanel3.Padding = new System.Windows.Forms.Padding(5, 15, 5, 5);
-            this.gunaShadowPanel3.Radius = 3;
-            this.gunaShadowPanel3.ShadowColor = System.Drawing.Color.DimGray;
-            this.gunaShadowPanel3.ShadowDepth = 70;
-            this.gunaShadowPanel3.ShadowShift = 4;
-            this.gunaShadowPanel3.Size = new System.Drawing.Size(199, 200);
-            this.gunaShadowPanel3.TabIndex = 11;
-            // 
-            // gunaElipsePanel9
-            // 
-            this.gunaElipsePanel9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel9.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel9.Controls.Add(this.gunaElipsePanel10);
-            this.gunaElipsePanel9.Controls.Add(this.btnShowTime);
-            this.gunaElipsePanel9.Dock = System.Windows.Forms.DockStyle.Top;
-            this.gunaElipsePanel9.Location = new System.Drawing.Point(5, 15);
-            this.gunaElipsePanel9.Margin = new System.Windows.Forms.Padding(3, 50, 3, 3);
-            this.gunaElipsePanel9.Name = "gunaElipsePanel9";
-            this.gunaElipsePanel9.Padding = new System.Windows.Forms.Padding(0, 0, 20, 0);
-            this.gunaElipsePanel9.Size = new System.Drawing.Size(189, 30);
-            this.gunaElipsePanel9.TabIndex = 18;
-            // 
-            // gunaElipsePanel10
-            // 
-            this.gunaElipsePanel10.BackColor = System.Drawing.Color.Transparent;
-            this.gunaElipsePanel10.BaseColor = System.Drawing.Color.White;
-            this.gunaElipsePanel10.Controls.Add(this.label6);
-            this.gunaElipsePanel10.Dock = System.Windows.Forms.DockStyle.Left;
-            this.gunaElipsePanel10.Location = new System.Drawing.Point(0, 0);
-            this.gunaElipsePanel10.Name = "gunaElipsePanel10";
-            this.gunaElipsePanel10.Size = new System.Drawing.Size(96, 30);
-            this.gunaElipsePanel10.TabIndex = 1;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label6.Location = new System.Drawing.Point(9, 7);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(81, 19);
-            this.label6.TabIndex = 11;
-            this.label6.Text = "Thời gian";
-            // 
-            // btnShowTime
-            // 
-            this.btnShowTime.AnimationHoverSpeed = 0.07F;
-            this.btnShowTime.AnimationSpeed = 0.03F;
-            this.btnShowTime.BaseColor = System.Drawing.Color.White;
-            this.btnShowTime.BorderColor = System.Drawing.Color.Black;
-            this.btnShowTime.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnShowTime.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnShowTime.Dock = System.Windows.Forms.DockStyle.Right;
-            this.btnShowTime.FocusedColor = System.Drawing.Color.Empty;
-            this.btnShowTime.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btnShowTime.ForeColor = System.Drawing.Color.White;
-            this.btnShowTime.Image = ((System.Drawing.Image)(resources.GetObject("btnShowTime.Image")));
-            this.btnShowTime.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnShowTime.Location = new System.Drawing.Point(144, 0);
-            this.btnShowTime.Name = "btnShowTime";
-            this.btnShowTime.OnHoverBaseColor = System.Drawing.Color.Transparent;
-            this.btnShowTime.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnShowTime.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnShowTime.OnHoverImage = ((System.Drawing.Image)(resources.GetObject("btnShowTime.OnHoverImage")));
-            this.btnShowTime.OnPressedColor = System.Drawing.Color.Black;
-            this.btnShowTime.Size = new System.Drawing.Size(25, 30);
-            this.btnShowTime.TabIndex = 1;
-            this.btnShowTime.Click += new System.EventHandler(this.btnShowTime_Click);
-            // 
-            // panel16
-            // 
-            this.panel16.BackColor = System.Drawing.Color.DarkGray;
-            this.panel16.Location = new System.Drawing.Point(21, 84);
-            this.panel16.Name = "panel16";
-            this.panel16.Size = new System.Drawing.Size(150, 1);
-            this.panel16.TabIndex = 13;
-            // 
-            // panel17
-            // 
-            this.panel17.BackColor = System.Drawing.Color.DarkGray;
-            this.panel17.Location = new System.Drawing.Point(21, 125);
-            this.panel17.Name = "panel17";
-            this.panel17.Size = new System.Drawing.Size(150, 1);
-            this.panel17.TabIndex = 12;
-            // 
-            // btnDFTime
-            // 
-            this.btnDFTime.AnimationHoverSpeed = 0.07F;
-            this.btnDFTime.AnimationSpeed = 0.03F;
-            this.btnDFTime.BackColor = System.Drawing.Color.Transparent;
-            this.btnDFTime.BaseColor = System.Drawing.Color.White;
-            this.btnDFTime.BorderColor = System.Drawing.Color.Black;
-            this.btnDFTime.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.btnDFTime.FocusedColor = System.Drawing.Color.Empty;
-            this.btnDFTime.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDFTime.ForeColor = System.Drawing.Color.White;
-            this.btnDFTime.Image = ((System.Drawing.Image)(resources.GetObject("btnDFTime.Image")));
-            this.btnDFTime.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDFTime.ImageSize = new System.Drawing.Size(20, 20);
-            this.btnDFTime.Location = new System.Drawing.Point(146, 101);
-            this.btnDFTime.Name = "btnDFTime";
-            this.btnDFTime.OnHoverBaseColor = System.Drawing.Color.Silver;
-            this.btnDFTime.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.btnDFTime.OnHoverForeColor = System.Drawing.Color.White;
-            this.btnDFTime.OnHoverImage = null;
-            this.btnDFTime.OnPressedColor = System.Drawing.Color.Black;
-            this.btnDFTime.Radius = 5;
-            this.btnDFTime.Size = new System.Drawing.Size(25, 25);
-            this.btnDFTime.TabIndex = 16;
-            this.btnDFTime.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnDFTime.Click += new System.EventHandler(this.btnDFTime_Click);
-            // 
-            // timePickerDf
-            // 
-            this.timePickerDf.BaseColor = System.Drawing.Color.White;
-            this.timePickerDf.BorderColor = System.Drawing.Color.Silver;
-            this.timePickerDf.BorderSize = 1;
-            this.timePickerDf.CustomFormat = "dd/MM/yyyy";
-            this.timePickerDf.DropDownAlign = System.Windows.Forms.LeftRightAlignment.Right;
-            this.timePickerDf.FocusedColor = System.Drawing.Color.Transparent;
-            this.timePickerDf.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.timePickerDf.ForeColor = System.Drawing.Color.Black;
-            this.timePickerDf.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.timePickerDf.Location = new System.Drawing.Point(16, 142);
-            this.timePickerDf.MaxDate = new System.DateTime(9998, 12, 31, 0, 0, 0, 0);
-            this.timePickerDf.MinDate = new System.DateTime(1753, 1, 1, 0, 0, 0, 0);
-            this.timePickerDf.Name = "timePickerDf";
-            this.timePickerDf.OnHoverBaseColor = System.Drawing.Color.White;
-            this.timePickerDf.OnHoverBorderColor = System.Drawing.Color.Gray;
-            this.timePickerDf.OnHoverForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.timePickerDf.OnPressedColor = System.Drawing.Color.Black;
-            this.timePickerDf.Size = new System.Drawing.Size(166, 30);
-            this.timePickerDf.TabIndex = 15;
-            this.timePickerDf.Text = "09/12/2023";
-            this.timePickerDf.Value = new System.DateTime(2023, 12, 9, 22, 22, 42, 78);
-            this.timePickerDf.Visible = false;
-            // 
-            // gunaButton9
-            // 
-            this.gunaButton9.AnimationHoverSpeed = 0.07F;
-            this.gunaButton9.AnimationSpeed = 0.03F;
-            this.gunaButton9.BackColor = System.Drawing.Color.Transparent;
-            this.gunaButton9.BaseColor = System.Drawing.Color.White;
-            this.gunaButton9.BorderColor = System.Drawing.Color.Black;
-            this.gunaButton9.DialogResult = System.Windows.Forms.DialogResult.None;
-            this.gunaButton9.FocusedColor = System.Drawing.Color.Empty;
-            this.gunaButton9.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaButton9.ForeColor = System.Drawing.Color.White;
-            this.gunaButton9.Image = ((System.Drawing.Image)(resources.GetObject("gunaButton9.Image")));
-            this.gunaButton9.ImageAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.gunaButton9.ImageSize = new System.Drawing.Size(20, 20);
-            this.gunaButton9.Location = new System.Drawing.Point(146, 60);
-            this.gunaButton9.Name = "gunaButton9";
-            this.gunaButton9.OnHoverBaseColor = System.Drawing.Color.Silver;
-            this.gunaButton9.OnHoverBorderColor = System.Drawing.Color.Black;
-            this.gunaButton9.OnHoverForeColor = System.Drawing.Color.White;
-            this.gunaButton9.OnHoverImage = null;
-            this.gunaButton9.OnPressedColor = System.Drawing.Color.Black;
-            this.gunaButton9.Radius = 5;
-            this.gunaButton9.Size = new System.Drawing.Size(25, 25);
-            this.gunaButton9.TabIndex = 14;
-            this.gunaButton9.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            // 
-            // gunaRadioButton5
-            // 
-            this.gunaRadioButton5.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton5.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton5.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
-            this.gunaRadioButton5.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton5.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton5.Location = new System.Drawing.Point(18, 62);
-            this.gunaRadioButton5.Name = "gunaRadioButton5";
-            this.gunaRadioButton5.Size = new System.Drawing.Size(97, 20);
-            this.gunaRadioButton5.TabIndex = 12;
-            this.gunaRadioButton5.Text = "Tháng này";
-            // 
-            // gunaRadioButton6
-            // 
-            this.gunaRadioButton6.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton6.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton6.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
-            this.gunaRadioButton6.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton6.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton6.Location = new System.Drawing.Point(21, 102);
-            this.gunaRadioButton6.Name = "gunaRadioButton6";
-            this.gunaRadioButton6.Size = new System.Drawing.Size(126, 20);
-            this.gunaRadioButton6.TabIndex = 13;
-            this.gunaRadioButton6.Text = "Lựa chọn khác";
+            this.pnTask.Paint += new System.Windows.Forms.PaintEventHandler(this.pnTask_Paint);
             // 
             // pnTonKho
             // 
@@ -1223,7 +974,7 @@
             this.pnTonKho.Location = new System.Drawing.Point(0, 274);
             this.pnTonKho.Name = "pnTonKho";
             this.pnTonKho.Padding = new System.Windows.Forms.Padding(10);
-            this.pnTonKho.Size = new System.Drawing.Size(219, 220);
+            this.pnTonKho.Size = new System.Drawing.Size(219, 152);
             this.pnTonKho.TabIndex = 15;
             // 
             // gunaShadowPanel2
@@ -1232,9 +983,7 @@
             this.gunaShadowPanel2.BaseColor = System.Drawing.Color.White;
             this.gunaShadowPanel2.Controls.Add(this.gunaElipsePanel3);
             this.gunaShadowPanel2.Controls.Add(this.gunaRadioButton8);
-            this.gunaShadowPanel2.Controls.Add(this.gunaRadioButton7);
             this.gunaShadowPanel2.Controls.Add(this.gunaRadioButton3);
-            this.gunaShadowPanel2.Controls.Add(this.gunaRadioButton4);
             this.gunaShadowPanel2.Dock = System.Windows.Forms.DockStyle.Fill;
             this.gunaShadowPanel2.Location = new System.Drawing.Point(10, 10);
             this.gunaShadowPanel2.Name = "gunaShadowPanel2";
@@ -1243,7 +992,7 @@
             this.gunaShadowPanel2.ShadowColor = System.Drawing.Color.DimGray;
             this.gunaShadowPanel2.ShadowDepth = 70;
             this.gunaShadowPanel2.ShadowShift = 4;
-            this.gunaShadowPanel2.Size = new System.Drawing.Size(199, 200);
+            this.gunaShadowPanel2.Size = new System.Drawing.Size(199, 132);
             this.gunaShadowPanel2.TabIndex = 11;
             // 
             // gunaElipsePanel3
@@ -1313,24 +1062,12 @@
             this.gunaRadioButton8.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
             this.gunaRadioButton8.FillColor = System.Drawing.Color.White;
             this.gunaRadioButton8.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton8.Location = new System.Drawing.Point(24, 169);
+            this.gunaRadioButton8.Location = new System.Drawing.Point(24, 91);
             this.gunaRadioButton8.Name = "gunaRadioButton8";
             this.gunaRadioButton8.Size = new System.Drawing.Size(153, 20);
             this.gunaRadioButton8.TabIndex = 15;
             this.gunaRadioButton8.Text = "Hết hàng trong kho";
-            // 
-            // gunaRadioButton7
-            // 
-            this.gunaRadioButton7.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton7.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton7.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
-            this.gunaRadioButton7.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton7.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton7.Location = new System.Drawing.Point(24, 133);
-            this.gunaRadioButton7.Name = "gunaRadioButton7";
-            this.gunaRadioButton7.Size = new System.Drawing.Size(158, 20);
-            this.gunaRadioButton7.TabIndex = 14;
-            this.gunaRadioButton7.Text = "Còn hàng trong kho";
+            this.gunaRadioButton8.CheckedChanged += new System.EventHandler(this.gunaRadioButton8_CheckedChanged);
             // 
             // gunaRadioButton3
             // 
@@ -1341,22 +1078,10 @@
             this.gunaRadioButton3.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.gunaRadioButton3.Location = new System.Drawing.Point(24, 60);
             this.gunaRadioButton3.Name = "gunaRadioButton3";
-            this.gunaRadioButton3.Size = new System.Drawing.Size(101, 20);
+            this.gunaRadioButton3.Size = new System.Drawing.Size(92, 20);
             this.gunaRadioButton3.TabIndex = 12;
-            this.gunaRadioButton3.Text = "tất cả hàng ";
-            // 
-            // gunaRadioButton4
-            // 
-            this.gunaRadioButton4.BaseColor = System.Drawing.SystemColors.Control;
-            this.gunaRadioButton4.CheckedOffColor = System.Drawing.Color.Gray;
-            this.gunaRadioButton4.CheckedOnColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(180)))), ((int)(((byte)(50)))));
-            this.gunaRadioButton4.FillColor = System.Drawing.Color.White;
-            this.gunaRadioButton4.Font = new System.Drawing.Font("Arial", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.gunaRadioButton4.Location = new System.Drawing.Point(24, 96);
-            this.gunaRadioButton4.Name = "gunaRadioButton4";
-            this.gunaRadioButton4.Size = new System.Drawing.Size(152, 20);
-            this.gunaRadioButton4.TabIndex = 13;
-            this.gunaRadioButton4.Text = "Dưới định mức tồn";
+            this.gunaRadioButton3.Text = "Con hang";
+            this.gunaRadioButton3.CheckedChanged += new System.EventHandler(this.gunaRadioButton3_CheckedChanged);
             // 
             // pnHangXe
             // 
@@ -1460,6 +1185,7 @@
             this.gunaRadioButton1.Size = new System.Drawing.Size(59, 20);
             this.gunaRadioButton1.TabIndex = 20;
             this.gunaRadioButton1.Text = "SYM";
+            this.gunaRadioButton1.CheckedChanged += new System.EventHandler(this.gunaRadioButton1_CheckedChanged);
             // 
             // gunaRadioButton2
             // 
@@ -1473,6 +1199,7 @@
             this.gunaRadioButton2.Size = new System.Drawing.Size(75, 20);
             this.gunaRadioButton2.TabIndex = 19;
             this.gunaRadioButton2.Text = "Vinfast";
+            this.gunaRadioButton2.CheckedChanged += new System.EventHandler(this.gunaRadioButton2_CheckedChanged);
             // 
             // gunaRadioButton9
             // 
@@ -1486,6 +1213,7 @@
             this.gunaRadioButton9.Size = new System.Drawing.Size(82, 20);
             this.gunaRadioButton9.TabIndex = 17;
             this.gunaRadioButton9.Text = "Yamaha";
+            this.gunaRadioButton9.CheckedChanged += new System.EventHandler(this.gunaRadioButton9_CheckedChanged);
             // 
             // gunaRadioButton10
             // 
@@ -1499,6 +1227,7 @@
             this.gunaRadioButton10.Size = new System.Drawing.Size(72, 20);
             this.gunaRadioButton10.TabIndex = 18;
             this.gunaRadioButton10.Text = "Honda";
+            this.gunaRadioButton10.CheckedChanged += new System.EventHandler(this.gunaRadioButton10_CheckedChanged);
             // 
             // panel10
             // 
@@ -1535,78 +1264,6 @@
             this.flyoutPanelControl1.Name = "flyoutPanelControl1";
             this.flyoutPanelControl1.Size = new System.Drawing.Size(8, 8);
             this.flyoutPanelControl1.TabIndex = 0;
-            // 
-            // panel5
-            // 
-            this.panel5.Controls.Add(this.lbListProduct);
-            this.panel5.Controls.Add(this.btnHome);
-            this.panel5.Controls.Add(this.label4);
-            this.panel5.Controls.Add(this.label1);
-            this.panel5.Controls.Add(this.lbProduct);
-            this.panel5.Location = new System.Drawing.Point(5, 5);
-            this.panel5.Margin = new System.Windows.Forms.Padding(0);
-            this.panel5.Name = "panel5";
-            this.panel5.Padding = new System.Windows.Forms.Padding(0, 10, 0, 5);
-            this.panel5.Size = new System.Drawing.Size(319, 37);
-            this.panel5.TabIndex = 1;
-            // 
-            // lbListProduct
-            // 
-            this.lbListProduct.AutoSize = true;
-            this.lbListProduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbListProduct.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbListProduct.Location = new System.Drawing.Point(148, 10);
-            this.lbListProduct.Margin = new System.Windows.Forms.Padding(0);
-            this.lbListProduct.Name = "lbListProduct";
-            this.lbListProduct.Size = new System.Drawing.Size(153, 20);
-            this.lbListProduct.TabIndex = 4;
-            this.lbListProduct.Text = "Danh sách sản phẩm";
-            // 
-            // btnHome
-            // 
-            this.btnHome.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.btnHome.Image = ((System.Drawing.Image)(resources.GetObject("btnHome.Image")));
-            this.btnHome.Location = new System.Drawing.Point(12, 11);
-            this.btnHome.Name = "btnHome";
-            this.btnHome.Size = new System.Drawing.Size(20, 20);
-            this.btnHome.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.btnHome.TabIndex = 0;
-            this.btnHome.TabStop = false;
-            this.btnHome.Click += new System.EventHandler(this.btnHome_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label4.Location = new System.Drawing.Point(129, 11);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(16, 20);
-            this.label4.TabIndex = 3;
-            this.label4.Text = "/";
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.label1.Location = new System.Drawing.Point(38, 13);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(14, 17);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "/";
-            // 
-            // lbProduct
-            // 
-            this.lbProduct.AutoSize = true;
-            this.lbProduct.Cursor = System.Windows.Forms.Cursors.Hand;
-            this.lbProduct.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lbProduct.ForeColor = System.Drawing.SystemColors.ControlDarkDark;
-            this.lbProduct.Location = new System.Drawing.Point(55, 11);
-            this.lbProduct.Name = "lbProduct";
-            this.lbProduct.Size = new System.Drawing.Size(75, 20);
-            this.lbProduct.TabIndex = 2;
-            this.lbProduct.Text = "Sản phẩm";
             // 
             // ThaoTac
             // 
@@ -1770,27 +1427,18 @@
             this.btnThemSanPham.Name = "btnThemSanPham";
             this.btnThemSanPham.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
             this.btnThemSanPham.Padding = new System.Windows.Forms.Padding(10, 8, 20, 8);
-            this.btnThemSanPham.Size = new System.Drawing.Size(221, 40);
+            this.btnThemSanPham.Size = new System.Drawing.Size(249, 40);
             this.btnThemSanPham.Text = "     Sản Phẩm";
             this.btnThemSanPham.Click += new System.EventHandler(this.btnThemSanPham_Click);
             // 
-            // toolStripMenuItem2
+            // btnNhapXe
             // 
-            this.toolStripMenuItem2.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem2.Image")));
-            this.toolStripMenuItem2.Name = "toolStripMenuItem2";
-            this.toolStripMenuItem2.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.toolStripMenuItem2.Padding = new System.Windows.Forms.Padding(10, 8, 20, 8);
-            this.toolStripMenuItem2.Size = new System.Drawing.Size(221, 40);
-            this.toolStripMenuItem2.Text = "     Lô sản phẩm";
-            // 
-            // toolStripMenuItem3
-            // 
-            this.toolStripMenuItem3.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem3.Image")));
-            this.toolStripMenuItem3.Name = "toolStripMenuItem3";
-            this.toolStripMenuItem3.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
-            this.toolStripMenuItem3.Padding = new System.Windows.Forms.Padding(10, 8, 20, 8);
-            this.toolStripMenuItem3.Size = new System.Drawing.Size(221, 40);
-            this.toolStripMenuItem3.Text = "     Tồn Kho";
+            this.btnNhapXe.Image = ((System.Drawing.Image)(resources.GetObject("btnNhapXe.Image")));
+            this.btnNhapXe.Name = "btnNhapXe";
+            this.btnNhapXe.Overflow = System.Windows.Forms.ToolStripItemOverflow.Always;
+            this.btnNhapXe.Padding = new System.Windows.Forms.Padding(10, 8, 20, 8);
+            this.btnNhapXe.Size = new System.Drawing.Size(249, 40);
+            this.btnNhapXe.Text = "     Phieu nhập hàng";
             // 
             // ThemMoi
             // 
@@ -1799,8 +1447,7 @@
             this.ThemMoi.ImageScalingSize = new System.Drawing.Size(18, 18);
             this.ThemMoi.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.btnThemSanPham,
-            this.toolStripMenuItem2,
-            this.toolStripMenuItem3});
+            this.btnNhapXe});
             this.ThemMoi.MinimumSize = new System.Drawing.Size(220, 100);
             this.ThemMoi.Name = "SanPham";
             this.ThemMoi.RenderStyle.ArrowColor = System.Drawing.Color.White;
@@ -1812,7 +1459,7 @@
             this.ThemMoi.RenderStyle.SelectionForeColor = System.Drawing.Color.Black;
             this.ThemMoi.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
             this.ThemMoi.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            this.ThemMoi.Size = new System.Drawing.Size(220, 124);
+            this.ThemMoi.Size = new System.Drawing.Size(220, 100);
             // 
             // Import
             // 
@@ -1855,6 +1502,63 @@
             this.toolStripMenuItem8.Size = new System.Drawing.Size(186, 40);
             this.toolStripMenuItem8.Text = "     Báo cáo";
             // 
+            // MaXe
+            // 
+            this.MaXe.HeaderText = "Mã sản phẩm";
+            this.MaXe.MinimumWidth = 6;
+            this.MaXe.Name = "MaXe";
+            this.MaXe.ReadOnly = true;
+            // 
+            // TenXe
+            // 
+            this.TenXe.HeaderText = "Tên sản phẩm";
+            this.TenXe.MinimumWidth = 6;
+            this.TenXe.Name = "TenXe";
+            this.TenXe.ReadOnly = true;
+            // 
+            // phanKhoi
+            // 
+            this.phanKhoi.HeaderText = "Phân Khối";
+            this.phanKhoi.MinimumWidth = 6;
+            this.phanKhoi.Name = "phanKhoi";
+            this.phanKhoi.ReadOnly = true;
+            // 
+            // btnLoaiCon
+            // 
+            this.btnLoaiCon.HeaderText = "Loại Côn";
+            this.btnLoaiCon.MinimumWidth = 6;
+            this.btnLoaiCon.Name = "btnLoaiCon";
+            this.btnLoaiCon.ReadOnly = true;
+            // 
+            // btnSL
+            // 
+            this.btnSL.HeaderText = "Số lượng";
+            this.btnSL.MinimumWidth = 6;
+            this.btnSL.Name = "btnSL";
+            this.btnSL.ReadOnly = true;
+            // 
+            // btnGiaNhap
+            // 
+            this.btnGiaNhap.HeaderText = "Giá Nhập";
+            this.btnGiaNhap.MinimumWidth = 6;
+            this.btnGiaNhap.Name = "btnGiaNhap";
+            this.btnGiaNhap.ReadOnly = true;
+            // 
+            // btnGiaBan
+            // 
+            this.btnGiaBan.HeaderText = "Giá bán";
+            this.btnGiaBan.MinimumWidth = 6;
+            this.btnGiaBan.Name = "btnGiaBan";
+            this.btnGiaBan.ReadOnly = true;
+            // 
+            // check
+            // 
+            this.check.HeaderText = "Check";
+            this.check.MinimumWidth = 6;
+            this.check.Name = "check";
+            this.check.ReadOnly = true;
+            this.check.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
             // TimKiem
             // 
             this.TimKiem.Name = "TimKiem";
@@ -1890,6 +1594,9 @@
             this.tableLayoutPanel1.PerformLayout();
             this.panel4.ResumeLayout(false);
             this.gunaElipsePanel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
+            this.panel5.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.gunaPanel1.ResumeLayout(false);
             this.pnbtn.ResumeLayout(false);
             this.pnSearch.ResumeLayout(false);
@@ -1898,12 +1605,6 @@
             this.gunaElipsePanel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMotorcycles)).EndInit();
             this.pnTask.ResumeLayout(false);
-            this.pnTime.ResumeLayout(false);
-            this.gunaShadowPanel3.ResumeLayout(false);
-            this.gunaShadowPanel3.PerformLayout();
-            this.gunaElipsePanel9.ResumeLayout(false);
-            this.gunaElipsePanel10.ResumeLayout(false);
-            this.gunaElipsePanel10.PerformLayout();
             this.pnTonKho.ResumeLayout(false);
             this.gunaShadowPanel2.ResumeLayout(false);
             this.gunaShadowPanel2.PerformLayout();
@@ -1921,9 +1622,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
             this.flyoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
-            this.panel5.ResumeLayout(false);
-            this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.btnHome)).EndInit();
             this.ThaoTac.ResumeLayout(false);
             this.Loc.ResumeLayout(false);
             this.Find.ResumeLayout(false);
@@ -2002,7 +1700,6 @@
         private Guna.UI.WinForms.GunaPanel gunaPanel1;
         private Guna.UI.WinForms.GunaButton btnExport;
         private Guna.UI.WinForms.GunaButton btnAddnew;
-        private Guna.UI.WinForms.GunaButton btImport;
         private Guna.UI.WinForms.GunaElipsePanel pnSearch;
         private Guna.UI.WinForms.GunaButton btnSearch;
         private Guna.UI.WinForms.GunaPictureBox gunaPictureBox1;
@@ -2015,30 +1712,17 @@
         private System.Windows.Forms.Panel panel10;
         private DevExpress.Utils.FlyoutPanel flyoutPanel1;
         private DevExpress.Utils.FlyoutPanelControl flyoutPanelControl1;
-        private System.Windows.Forms.Panel pnTime;
-        private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel3;
-        private System.Windows.Forms.Panel panel16;
-        private System.Windows.Forms.Panel panel17;
-        private Guna.UI.WinForms.GunaButton btnDFTime;
-        private Guna.UI.WinForms.GunaDateTimePicker timePickerDf;
-        private System.Windows.Forms.Label label6;
-        private Guna.UI.WinForms.GunaButton gunaButton9;
-        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton5;
-        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton6;
         private System.Windows.Forms.Panel pnTonKho;
         private Guna.UI.WinForms.GunaShadowPanel gunaShadowPanel2;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton3;
-        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton4;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton8;
-        private Guna.UI.WinForms.GunaRadioButton gunaRadioButton7;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton1;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton2;
         private System.Windows.Forms.Label label3;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton9;
         private Guna.UI.WinForms.GunaRadioButton gunaRadioButton10;
         private System.Windows.Forms.ToolStripMenuItem btnThemSanPham;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem3;
+        private System.Windows.Forms.ToolStripMenuItem btnNhapXe;
         private Guna.UI.WinForms.GunaContextMenuStrip ThemMoi;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel4;
         private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel5;
@@ -2053,6 +1737,14 @@
         private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView dgvMotorcycles;
+        private Guna.UI.WinForms.GunaPanel pnbtn;
+        private borderRadius.borderMenutrip TimKiem;
+        private Guna.UI.WinForms.GunaCircleButton btnShowHang;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
+        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
+        private System.Windows.Forms.Label label5;
+        private Guna.UI.WinForms.GunaCircleButton btnShowTonKho;
+        private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn phanKhoi;
@@ -2060,17 +1752,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn btnSL;
         private System.Windows.Forms.DataGridViewTextBoxColumn btnGiaNhap;
         private System.Windows.Forms.DataGridViewTextBoxColumn btnGiaBan;
-        private System.Windows.Forms.DataGridViewCheckBoxColumn check;
-        private Guna.UI.WinForms.GunaPanel pnbtn;
-        private borderRadius.borderMenutrip TimKiem;
-        private Guna.UI.WinForms.GunaCircleButton btnShowHang;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel9;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel10;
-        private Guna.UI.WinForms.GunaCircleButton btnShowTime;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel3;
-        private Guna.UI.WinForms.GunaElipsePanel gunaElipsePanel6;
-        private System.Windows.Forms.Label label5;
-        private Guna.UI.WinForms.GunaCircleButton btnShowTonKho;
-        private System.Windows.Forms.Panel panel8;
+        private System.Windows.Forms.DataGridViewComboBoxColumn check;
     }
 }
