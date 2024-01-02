@@ -51,6 +51,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="KhachHangService.cs" />
     <Compile Include="LoginService.cs" />
     <Compile Include="MauSacService.cs" />
     <Compile Include="MauXeService.cs" />

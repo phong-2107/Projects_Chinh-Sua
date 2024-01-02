@@ -188,9 +188,15 @@ namespace GUI
             }
         }
 
-        private void btnPhuTung_Click(object sender, EventArgs e)
+        private void accordionControlElement6_Click(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnNhanVien_Click(object sender, EventArgs e)
+        {
+            FormNhanVien demo = new FormNhanVien();
+            openChildForm(demo);
         }
     }
 }
