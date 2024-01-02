@@ -83,11 +83,11 @@
     <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
       <HintPath>..\packages\EntityFramework.6.4.4\lib\net45\EntityFramework.SqlServer.dll</HintPath>
     </Reference>
-    <Reference Include="Guna.UI">
-      <HintPath>Z:\Dowloads\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib-master\Guna.UI WinForms\.net 4.0\Guna.UI.dll</HintPath>
+    <Reference Include="Guna.UI %281%29">
+      <HintPath>..\..\..\..\Downloads\Guna.UI (1).dll</HintPath>
     </Reference>
     <Reference Include="Guna.UI2">
-      <HintPath>Z:\Dowloads\Guna.UI2.dll</HintPath>
+      <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
     <Reference Include="Microsoft.VisualBasic" />
     <Reference Include="System" />
@@ -169,23 +169,11 @@
     <Compile Include="FormNhanVien.Designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormNhapThemXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormNhapThemXe.Designer.cs">
-      <DependentUpon>FormNhapThemXe.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormThemChiTietXe.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormThemChiTietXe.Designer.cs">
       <DependentUpon>FormThemChiTietXe.cs</DependentUpon>
-    </Compile>
-    <Compile Include="FormThemCTAnhXe.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormThemCTAnhXe.Designer.cs">
-      <DependentUpon>FormThemCTAnhXe.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThemHang.cs">
       <SubType>Form</SubType>
@@ -249,14 +237,8 @@
     <EmbeddedResource Include="FormNhanVien.resx">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="FormNhapThemXe.resx">
-      <DependentUpon>FormNhapThemXe.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="FormThemChiTietXe.resx">
       <DependentUpon>FormThemChiTietXe.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="FormThemCTAnhXe.resx">
-      <DependentUpon>FormThemCTAnhXe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="FormThemHang.resx">
       <DependentUpon>FormThemHang.cs</DependentUpon>
