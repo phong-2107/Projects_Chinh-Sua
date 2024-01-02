@@ -80,7 +80,7 @@ namespace GUI
 
         private void ShowInfoMotor(MauXe xe)
         {
-            txt
+         
         }
 
         #endregion

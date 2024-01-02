@@ -67,7 +67,6 @@
     <Compile Include="Entities\NhaCungCap.cs" />
     <Compile Include="Entities\NhanVien.cs" />
     <Compile Include="Entities\PhieuNhap.cs" />
-    <Compile Include="Entities\sysdiagram.cs" />
     <Compile Include="Entities\TaiKhoanLogin.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

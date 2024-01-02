@@ -31,6 +31,14 @@ namespace DAL.Entities
         [StringLength(10)]
         public string SDT { get; set; }
 
+        [Required]
+        [StringLength(100)]
+        public string LOGO { get; set; }
+
+        [Required]
+        [StringLength(50)]
+        public string EMAIL { get; set; }
+
         public bool ACTIVE { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]

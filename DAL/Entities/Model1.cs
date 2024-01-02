@@ -23,7 +23,6 @@ namespace DAL.Entities
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<PhieuNhap> PhieuNhaps { get; set; }
-        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoanLogin> TaiKhoanLogins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
