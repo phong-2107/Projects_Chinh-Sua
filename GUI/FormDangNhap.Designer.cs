@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormDangNhap));
             this.btnQuanli = new Guna.UI.WinForms.GunaButton();
             this.txtID = new Guna.UI.WinForms.GunaTextBox();
@@ -42,6 +43,7 @@
             this.pnError = new Guna.UI.WinForms.GunaElipsePanel();
             this.txtError = new Guna.UI.WinForms.GunaLabel();
             this.btnEye = new Guna.UI.WinForms.GunaCircleButton();
+            this.guna2BorderlessForm1 = new Guna.UI2.WinForms.Guna2BorderlessForm(this.components);
             this.pnError.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -271,6 +273,13 @@
             this.btnEye.TabIndex = 22;
             this.btnEye.Click += new System.EventHandler(this.picEyes_Click);
             // 
+            // guna2BorderlessForm1
+            // 
+            this.guna2BorderlessForm1.BorderRadius = 15;
+            this.guna2BorderlessForm1.ContainerControl = this;
+            this.guna2BorderlessForm1.DockIndicatorTransparencyValue = 0.6D;
+            this.guna2BorderlessForm1.TransparentWhileDrag = true;
+            // 
             // FormDangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -315,5 +324,6 @@
         private Guna.UI.WinForms.GunaElipsePanel pnError;
         private Guna.UI.WinForms.GunaCircleButton btnEye;
         private Guna.UI.WinForms.GunaLabel txtError;
+        private Guna.UI2.WinForms.Guna2BorderlessForm guna2BorderlessForm1;
     }
 }

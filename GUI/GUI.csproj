@@ -86,6 +86,10 @@
     <Reference Include="Guna.UI %281%29">
       <HintPath>..\..\..\..\Downloads\Guna.UI (1).dll</HintPath>
     </Reference>
+    <Reference Include="Guna.UI, Version=1.9.0.1, Culture=neutral, PublicKeyToken=ad275b4be6718d4b, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="Guna.UI2">
       <HintPath>..\..\..\..\Downloads\Guna.UI2.dll</HintPath>
     </Reference>
@@ -127,6 +131,24 @@
     </Compile>
     <Compile Include="Commons2.cs" />
     <Compile Include="Commons.cs" />
+    <Compile Include="FormHangSX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormHangSX.Designer.cs">
+      <DependentUpon>FormHangSX.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormNCC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormNCC.Designer.cs">
+      <DependentUpon>FormNCC.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ShowImg.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ShowImg.Designer.cs">
+      <DependentUpon>ShowImg.cs</DependentUpon>
+    </Compile>
     <Compile Include="FormAccount.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -157,17 +179,17 @@
     <Compile Include="FormHome.Designer.cs">
       <DependentUpon>FormHome.cs</DependentUpon>
     </Compile>
-    <Compile Include="FormMapKho.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="FormMapKho.Designer.cs">
-      <DependentUpon>FormMapKho.cs</DependentUpon>
-    </Compile>
     <Compile Include="FormNhanVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="FormNhanVien.Designer.cs">
       <DependentUpon>FormNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPhieuNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormPhieuNhap.Designer.cs">
+      <DependentUpon>FormPhieuNhap.cs</DependentUpon>
     </Compile>
     <Compile Include="FormThemChiTietXe.cs">
       <SubType>Form</SubType>
@@ -219,6 +241,15 @@
     <Compile Include="searchResultControl.Designer.cs">
       <DependentUpon>searchResultControl.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="FormHangSX.resx">
+      <DependentUpon>FormHangSX.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormNCC.resx">
+      <DependentUpon>FormNCC.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ShowImg.resx">
+      <DependentUpon>ShowImg.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="FormAccount.resx">
       <DependentUpon>FormAccount.cs</DependentUpon>
     </EmbeddedResource>

@@ -20,7 +20,7 @@ namespace DAL.Entities
 
         public int SOLUONG { get; set; }
 
-        public decimal TONGGT { get; set; }
+        public double TONGGT { get; set; }
 
         public virtual MauXe MauXe { get; set; }
 

@@ -82,5 +82,27 @@ namespace BUS
             }
             return lmx;
         }
+
+        public string IDTuDong()
+        {
+            Model1 context = new Model1();
+            var lastRow = context.MauXes
+                    .OrderByDescending(x => x.IDMAUXE)
+                    .FirstOrDefault();
+            if (lastRow != null)
+            {
+                var lastId = lastRow.IDMAUXE;
+                var prefix = lastId.Substring(0, 2);
+                var numberStr = lastId.Substring(2);
+                int number = int.Parse(numberStr);
+                number++;
+                var newId = $"{prefix}{number.ToString("D8")}";
+                return newId;
+            }
+            else
+            {
+                return "MX00000001";
+            }
+        }
     }
 }

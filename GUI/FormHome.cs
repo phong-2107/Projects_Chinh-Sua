@@ -178,7 +178,7 @@ namespace GUI
         {
             try
             {
-                Commons.handle = ShowProgressPanel(this, options);
+                common2.handle = ShowProgressPanel(this, options);
                 FormColors color = new FormColors();
                 color.ShowDialog();
             }
@@ -197,6 +197,44 @@ namespace GUI
         {
             FormNhanVien demo = new FormNhanVien();
             openChildForm(demo);
+        }
+
+        private void accordionControlElement15_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                common2.handle = ShowProgressPanel(this, options);
+                FormHangSX hangSX = new FormHangSX();
+                hangSX.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void btnNCC_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                common2.handle = ShowProgressPanel(this, options);
+                FormNCC ncc = new FormNCC();
+                ncc.ShowDialog();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.Message);
+            }
+        }
+
+        private void accordionControlElement4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnKhachHang_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -16,11 +16,17 @@ namespace BUS
             Model1 context = new Model1();
             return context.MauSacs.ToList();
         }
-        private MauSac findById(string id)
+        public string findIdByName(string name)
         {
             Model1 context = new Model1();
-            var find = context.MauSacs.FirstOrDefault(p => p.IDMAU == id);
-            return find;
+            var find = context.MauSacs.FirstOrDefault(p => p.TENMAU.Equals(name.Trim()));
+            return find.IDMAU;
+        }
+        public string findNameById(string id)
+        {
+            Model1 context = new Model1();
+            var find = context.MauSacs.FirstOrDefault(p => p.IDMAU.Equals(id.Trim()));
+            return find.TENMAU;
         }
         public string IDTuDong()
         {
@@ -45,7 +51,7 @@ namespace BUS
         }
 
 
-        public int  ThemMau(string Ma, string ten, string rgb )
+        public int  ThemMau(string Ma, string ten )
         {
             Model1 context = new Model1();
             
@@ -53,7 +59,6 @@ namespace BUS
             if (find != null)
             {
                 find.TENMAU = ten;
-                find.MARGB = rgb;
                 context.SaveChanges();
                 return 0;
             }
@@ -62,12 +67,15 @@ namespace BUS
                 MauSac color = new MauSac();
                 color.IDMAU = Ma;
                 color.TENMAU = ten;
-                color.MARGB = rgb;
                 color.ACTIVE = true;
                 context.MauSacs.Add(color);
                 context.SaveChanges();
                 return 1;
             }
         }
+
+        
+
+
     }
 }

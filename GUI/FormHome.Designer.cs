@@ -30,7 +30,6 @@
         {
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FormHome));
-            this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement25 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement26 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Siderbar = new System.Windows.Forms.Panel();
@@ -55,21 +54,13 @@
             this.btnProduct = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnColors = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement15 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement16 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnNCC = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.btnNhanVien = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement3 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement9 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.btnKhachHang = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement4 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement11 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.accordionControlElement19 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
-            this.accordionControlElement22 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.panelMain = new System.Windows.Forms.Panel();
             this.SanPham = new Guna.UI.WinForms.GunaContextMenuStrip();
             this.btnSanPhamItems = new System.Windows.Forms.ToolStripMenuItem();
@@ -126,6 +117,15 @@
             this.toolStripMenuItem14 = new System.Windows.Forms.ToolStripMenuItem();
             this.defaultLookAndFeel1 = new DevExpress.LookAndFeel.DefaultLookAndFeel(this.components);
             this.accordionControlElement1 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement18 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement12 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement23 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement22 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement21 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement20 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement5 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement17 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
+            this.accordionControlElement10 = new DevExpress.XtraBars.Navigation.AccordionControlElement();
             this.Siderbar.SuspendLayout();
             this.gunaPanel2.SuspendLayout();
             this.gunaPanel1.SuspendLayout();
@@ -147,14 +147,6 @@
             this.Khuyenmai.SuspendLayout();
             this.Settings.SuspendLayout();
             this.SuspendLayout();
-            // 
-            // accordionControlElement23
-            // 
-            this.accordionControlElement23.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement23.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement23.Name = "accordionControlElement23";
-            this.accordionControlElement23.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement23.Text = "Tìm đơn hàng";
             // 
             // accordionControlElement25
             // 
@@ -413,7 +405,6 @@
             this.accordionControlElement6.Appearance.Hovered.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement6.Appearance.Hovered.Options.UseFont = true;
             this.accordionControlElement6.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement23,
             this.accordionControlElement24,
             this.accordionControlElement25,
             this.accordionControlElement26});
@@ -441,7 +432,6 @@
             this.btnNhanVien,
             this.accordionControlElement3,
             this.accordionControlElement4,
-            this.accordionControlElement5,
             this.accordionControlElement6});
             this.Taskbar.ExpandElementMode = DevExpress.XtraBars.Navigation.ExpandElementMode.Multiple;
             this.Taskbar.GroupHeight = 40;
@@ -479,7 +469,7 @@
             this.btnProduct,
             this.btnColors,
             this.accordionControlElement15,
-            this.accordionControlElement16});
+            this.btnNCC});
             this.accordionControlElement2.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement2.ImageOptions.SvgImage")));
             this.accordionControlElement2.Name = "accordionControlElement2";
             this.accordionControlElement2.Text = "Sản phẩm";
@@ -509,14 +499,16 @@
             this.accordionControlElement15.Name = "accordionControlElement15";
             this.accordionControlElement15.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement15.Text = "Thương Hiệu";
+            this.accordionControlElement15.Click += new System.EventHandler(this.accordionControlElement15_Click);
             // 
-            // accordionControlElement16
+            // btnNCC
             // 
-            this.accordionControlElement16.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement16.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement16.Name = "accordionControlElement16";
-            this.accordionControlElement16.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement16.Text = "Nhà cung cấp";
+            this.btnNCC.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnNCC.Appearance.Default.Options.UseFont = true;
+            this.btnNCC.Name = "btnNCC";
+            this.btnNCC.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnNCC.Text = "Nhà cung cấp";
+            this.btnNCC.Click += new System.EventHandler(this.btnNCC_Click);
             // 
             // btnNhanVien
             // 
@@ -542,27 +534,20 @@
             this.accordionControlElement3.Appearance.Hovered.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.accordionControlElement3.Appearance.Hovered.Options.UseFont = true;
             this.accordionControlElement3.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement9,
-            this.accordionControlElement10});
+            this.btnKhachHang});
+            this.accordionControlElement3.Expanded = true;
             this.accordionControlElement3.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement3.ImageOptions.SvgImage")));
             this.accordionControlElement3.Name = "accordionControlElement3";
             this.accordionControlElement3.Text = "Khách Hàng";
             // 
-            // accordionControlElement9
+            // btnKhachHang
             // 
-            this.accordionControlElement9.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement9.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement9.Name = "accordionControlElement9";
-            this.accordionControlElement9.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement9.Text = "Khách hàng";
-            // 
-            // accordionControlElement10
-            // 
-            this.accordionControlElement10.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement10.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement10.Name = "accordionControlElement10";
-            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement10.Text = "Chăm sóc khách hàng";
+            this.btnKhachHang.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnKhachHang.Appearance.Default.Options.UseFont = true;
+            this.btnKhachHang.Name = "btnKhachHang";
+            this.btnKhachHang.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.btnKhachHang.Text = "Khách hàng";
+            this.btnKhachHang.Click += new System.EventHandler(this.btnKhachHang_Click);
             // 
             // accordionControlElement4
             // 
@@ -572,13 +557,11 @@
             this.accordionControlElement4.Appearance.Hovered.Options.UseFont = true;
             this.accordionControlElement4.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
             this.accordionControlElement11,
-            this.accordionControlElement12,
-            this.accordionControlElement17,
-            this.accordionControlElement18,
             this.accordionControlElement19});
             this.accordionControlElement4.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement4.ImageOptions.SvgImage")));
             this.accordionControlElement4.Name = "accordionControlElement4";
             this.accordionControlElement4.Text = "Báo Cáo";
+            this.accordionControlElement4.Click += new System.EventHandler(this.accordionControlElement4_Click);
             // 
             // accordionControlElement11
             // 
@@ -588,30 +571,6 @@
             this.accordionControlElement11.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement11.Text = "Doanh thu";
             // 
-            // accordionControlElement12
-            // 
-            this.accordionControlElement12.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement12.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement12.Name = "accordionControlElement12";
-            this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement12.Text = "Tồn kho";
-            // 
-            // accordionControlElement17
-            // 
-            this.accordionControlElement17.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement17.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement17.Name = "accordionControlElement17";
-            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement17.Text = "Khách hàng";
-            // 
-            // accordionControlElement18
-            // 
-            this.accordionControlElement18.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement18.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement18.Name = "accordionControlElement18";
-            this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement18.Text = "Đơn hàng ";
-            // 
             // accordionControlElement19
             // 
             this.accordionControlElement19.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -619,44 +578,6 @@
             this.accordionControlElement19.Name = "accordionControlElement19";
             this.accordionControlElement19.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement19.Text = "Sản phẩm";
-            // 
-            // accordionControlElement5
-            // 
-            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement5.Appearance.Hovered.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement5.Appearance.Hovered.Options.UseFont = true;
-            this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
-            this.accordionControlElement20,
-            this.accordionControlElement21,
-            this.accordionControlElement22});
-            this.accordionControlElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
-            this.accordionControlElement5.Name = "accordionControlElement5";
-            this.accordionControlElement5.Text = "Kho hàng";
-            // 
-            // accordionControlElement20
-            // 
-            this.accordionControlElement20.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement20.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement20.Name = "accordionControlElement20";
-            this.accordionControlElement20.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement20.Text = "Xuất nhập kho";
-            // 
-            // accordionControlElement21
-            // 
-            this.accordionControlElement21.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement21.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement21.Name = "accordionControlElement21";
-            this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement21.Text = "Kiểm kho";
-            // 
-            // accordionControlElement22
-            // 
-            this.accordionControlElement22.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.accordionControlElement22.Appearance.Default.Options.UseFont = true;
-            this.accordionControlElement22.Name = "accordionControlElement22";
-            this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
-            this.accordionControlElement22.Text = "Tồn kho";
             // 
             // panelMain
             // 
@@ -1262,6 +1183,84 @@
             this.accordionControlElement1.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
             this.accordionControlElement1.Text = "Element1";
             // 
+            // accordionControlElement18
+            // 
+            this.accordionControlElement18.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement18.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement18.Name = "accordionControlElement18";
+            this.accordionControlElement18.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement18.Text = "Đơn hàng ";
+            // 
+            // accordionControlElement12
+            // 
+            this.accordionControlElement12.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement12.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement12.Name = "accordionControlElement12";
+            this.accordionControlElement12.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement12.Text = "Tồn kho";
+            // 
+            // accordionControlElement23
+            // 
+            this.accordionControlElement23.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement23.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement23.Name = "accordionControlElement23";
+            this.accordionControlElement23.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement23.Text = "Tìm đơn hàng";
+            // 
+            // accordionControlElement22
+            // 
+            this.accordionControlElement22.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement22.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement22.Name = "accordionControlElement22";
+            this.accordionControlElement22.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement22.Text = "Tồn kho";
+            // 
+            // accordionControlElement21
+            // 
+            this.accordionControlElement21.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement21.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement21.Name = "accordionControlElement21";
+            this.accordionControlElement21.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement21.Text = "Kiểm kho";
+            // 
+            // accordionControlElement20
+            // 
+            this.accordionControlElement20.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement20.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement20.Name = "accordionControlElement20";
+            this.accordionControlElement20.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement20.Text = "Xuất nhập kho";
+            // 
+            // accordionControlElement5
+            // 
+            this.accordionControlElement5.Appearance.Default.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement5.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement5.Appearance.Hovered.Font = new System.Drawing.Font("Arial", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement5.Appearance.Hovered.Options.UseFont = true;
+            this.accordionControlElement5.Elements.AddRange(new DevExpress.XtraBars.Navigation.AccordionControlElement[] {
+            this.accordionControlElement20,
+            this.accordionControlElement21,
+            this.accordionControlElement22});
+            this.accordionControlElement5.ImageOptions.SvgImage = ((DevExpress.Utils.Svg.SvgImage)(resources.GetObject("accordionControlElement5.ImageOptions.SvgImage")));
+            this.accordionControlElement5.Name = "accordionControlElement5";
+            this.accordionControlElement5.Text = "Kho hàng";
+            // 
+            // accordionControlElement17
+            // 
+            this.accordionControlElement17.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement17.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement17.Name = "accordionControlElement17";
+            this.accordionControlElement17.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement17.Text = "Khách hàng";
+            // 
+            // accordionControlElement10
+            // 
+            this.accordionControlElement10.Appearance.Default.Font = new System.Drawing.Font("Arial", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.accordionControlElement10.Appearance.Default.Options.UseFont = true;
+            this.accordionControlElement10.Name = "accordionControlElement10";
+            this.accordionControlElement10.Style = DevExpress.XtraBars.Navigation.ElementStyle.Item;
+            this.accordionControlElement10.Text = "Chăm sóc khách hàng";
+            // 
             // FormHome
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1300,8 +1299,6 @@
         }
 
         #endregion
-
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement25;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement26;
         private System.Windows.Forms.Panel Siderbar;
@@ -1325,20 +1322,12 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement2;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnProduct;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement15;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement16;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnNCC;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement3;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement9;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement btnKhachHang;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement4;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement11;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement19;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
-        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement22;
         private System.Windows.Forms.Panel panelMain;
         private Guna.UI.WinForms.GunaContextMenuStrip SanPham;
         private System.Windows.Forms.ToolStripMenuItem btnSanPhamItems;
@@ -1397,5 +1386,14 @@
         private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement1;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnColors;
         private DevExpress.XtraBars.Navigation.AccordionControlElement btnNhanVien;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement18;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement12;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement23;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement22;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement21;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement20;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement5;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement17;
+        private DevExpress.XtraBars.Navigation.AccordionControlElement accordionControlElement10;
     }
 }

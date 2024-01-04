@@ -118,27 +118,6 @@
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
   <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
-  <data name="gunaPictureBox1.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAR5JREFUOE/VU0sOAUEUnIgEW4kDYC129iQuIc7Akt3sLOaXDBZOwAHIbNjPMVxF
-        FTXxbbSIRCUvU6+mXnWnZ9p5Bdd1857n1Vnkku2B4WIUReMwDJMgCGI8p+SoURzHBdneA8MQssJwDzwn
-        mXoOWh+1tArVznpq76DQkdrn4DnBnFzu7BbaKT2vzxS7q8E8VWsEjmTm+35VrRkIa8A8UWsEPfSqNeNr
-        gTB0aUItYNyJG0uehfquYs6gAdXkqpbFma1izoC4FrXGw9n/CcSVqoC3pJXwr3XICXJq5PTQK24OxBcb
-        olJyBew5qIX2qLZ8KfiAPJu9Qibq6pWPIpDtgrjk9GRX72ngJ/hZ4EbUGg9nIc75gqtZ1gYfaHZKcZwD
-        PwQPrM0aTH0AAAAASUVORK5CYII=
-</value>
-  </data>
-  <data name="gunaButton3.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
-    <value>
-        iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL
-        DAAACwwBP0AiyAAAAPxJREFUSEvt1kESgjAMhWHuId5E9zpeyqUHcjwQeg9M5Z8A0lfame7gm+mC5CXZ
-        0uy2p+/7m72PPUcriohn+AzulPLYwHuYG9GKIhI7HOQfZ2CGVhQRdTh40EojPEMrikjqcLB+nOAMrSgi
-        a4eTO37IzdDKwsgCbY3cvxPtJMudh/gSEY1cdazXyFXHeo1cdazXyFXHeo1cdazXyE097R1or7Jsa+8V
-        Bqdoa+SmWlrZbOY4jI5oaeQc5WKMO8oaOUe5GOOOskbOUS7GuKOskXOUizHuKGvkHOVijDvKGjlHuRjj
-        jrJmmcWvTwUd6zULXe3VPN7Zu7B+txlN8wVuQ70Wgo1oFgAAAABJRU5ErkJggg==
-</value>
-  </data>
   <data name="btnExit.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
     <value>
         iVBORw0KGgoAAAANSUhEUgAAAA8AAAAPCAYAAAA71pVKAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAL

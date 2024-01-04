@@ -121,11 +121,6 @@ namespace GUI
             ThemMoi.Show(btnAddnew, 0, btnAddnew.Height);
         }
 
-        private void btnSearch_Click(object sender, EventArgs e)
-        {
-            Find.Show(pnSearch, 0, pnSearch.Height);
-        }
-
         private void txtSearch_TextChanged(object sender, EventArgs e)
         {
 
@@ -244,18 +239,25 @@ namespace GUI
 
         }
 
+        
+
         private void btnNhapXe_Click(object sender, EventArgs e)
         {
             try
             {
                 Commons.handle = ShowProgressPanel(this, options);
-                FormNhapThemXe ThemHang = new FormNhapThemXe();
+                FormPhieuNhap ThemHang = new FormPhieuNhap();
                 ThemHang.ShowDialog();
             }
             catch (Exception ex)
             {
                 MessageBox.Show(ex.Message);
             }
+        }
+
+        private void gunaPanel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

@@ -130,17 +130,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.flyoutPanel1 = new DevExpress.Utils.FlyoutPanel();
             this.flyoutPanelControl1 = new DevExpress.Utils.FlyoutPanelControl();
-            this.Loc = new Guna.UI.WinForms.GunaContextMenuStrip();
-            this.toolStripMenuItem4 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem5 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripMenuItem6 = new System.Windows.Forms.ToolStripMenuItem();
-            this.Find = new Guna.UI.WinForms.GunaContextMenuStrip();
-            this.Findid = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox1 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator2 = new System.Windows.Forms.ToolStripSeparator();
-            this.toolStripMenuItem10 = new System.Windows.Forms.ToolStripMenuItem();
-            this.toolStripTextBox2 = new System.Windows.Forms.ToolStripTextBox();
-            this.toolStripSeparator1 = new System.Windows.Forms.ToolStripSeparator();
             this.behaviorManager1 = new DevExpress.Utils.Behaviors.BehaviorManager(this.components);
             this.btnThemSanPham = new System.Windows.Forms.ToolStripMenuItem();
             this.btnNhapXe = new System.Windows.Forms.ToolStripMenuItem();
@@ -177,8 +166,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).BeginInit();
             this.flyoutPanel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).BeginInit();
-            this.Loc.SuspendLayout();
-            this.Find.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).BeginInit();
             this.ThemMoi.SuspendLayout();
             this.Import.SuspendLayout();
@@ -699,6 +686,7 @@
             this.gunaPanel1.Name = "gunaPanel1";
             this.gunaPanel1.Size = new System.Drawing.Size(564, 105);
             this.gunaPanel1.TabIndex = 7;
+            this.gunaPanel1.Paint += new System.Windows.Forms.PaintEventHandler(this.gunaPanel1_Paint);
             // 
             // pnbtn
             // 
@@ -828,7 +816,6 @@
             this.btnSearch.Size = new System.Drawing.Size(30, 30);
             this.btnSearch.TabIndex = 7;
             this.btnSearch.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
             // 
             // gunaPictureBox1
             // 
@@ -1316,115 +1303,6 @@
             this.flyoutPanelControl1.Size = new System.Drawing.Size(8, 8);
             this.flyoutPanelControl1.TabIndex = 0;
             // 
-            // Loc
-            // 
-            this.Loc.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Loc.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Loc.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.Loc.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem4,
-            this.toolStripMenuItem5,
-            this.toolStripMenuItem6});
-            this.Loc.Name = "SanPham";
-            this.Loc.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.Loc.RenderStyle.BorderColor = System.Drawing.Color.Transparent;
-            this.Loc.RenderStyle.ColorTable = null;
-            this.Loc.RenderStyle.RoundedEdges = false;
-            this.Loc.RenderStyle.SelectionArrowColor = System.Drawing.Color.Transparent;
-            this.Loc.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(120)))), ((int)(((byte)(254)))));
-            this.Loc.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.Loc.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.Loc.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            this.Loc.Size = new System.Drawing.Size(192, 106);
-            // 
-            // toolStripMenuItem4
-            // 
-            this.toolStripMenuItem4.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem4.Image")));
-            this.toolStripMenuItem4.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolStripMenuItem4.Name = "toolStripMenuItem4";
-            this.toolStripMenuItem4.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem4.Size = new System.Drawing.Size(201, 34);
-            this.toolStripMenuItem4.Text = "     Sản Phẩm";
-            // 
-            // toolStripMenuItem5
-            // 
-            this.toolStripMenuItem5.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem5.Image")));
-            this.toolStripMenuItem5.Name = "toolStripMenuItem5";
-            this.toolStripMenuItem5.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem5.Size = new System.Drawing.Size(201, 34);
-            this.toolStripMenuItem5.Text = "     Lô sản phẩm";
-            // 
-            // toolStripMenuItem6
-            // 
-            this.toolStripMenuItem6.Image = ((System.Drawing.Image)(resources.GetObject("toolStripMenuItem6.Image")));
-            this.toolStripMenuItem6.Name = "toolStripMenuItem6";
-            this.toolStripMenuItem6.Padding = new System.Windows.Forms.Padding(5);
-            this.toolStripMenuItem6.Size = new System.Drawing.Size(201, 34);
-            this.toolStripMenuItem6.Text = "     Tồn Kho";
-            // 
-            // Find
-            // 
-            this.Find.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.Find.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Find.ImageScalingSize = new System.Drawing.Size(18, 18);
-            this.Find.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.Findid,
-            this.toolStripTextBox1,
-            this.toolStripSeparator2,
-            this.toolStripMenuItem10,
-            this.toolStripTextBox2,
-            this.toolStripSeparator1});
-            this.Find.Name = "SanPham";
-            this.Find.RenderStyle.ArrowColor = System.Drawing.Color.FromArgb(((int)(((byte)(151)))), ((int)(((byte)(143)))), ((int)(((byte)(255)))));
-            this.Find.RenderStyle.BorderColor = System.Drawing.Color.Transparent;
-            this.Find.RenderStyle.ColorTable = null;
-            this.Find.RenderStyle.RoundedEdges = false;
-            this.Find.RenderStyle.SelectionArrowColor = System.Drawing.Color.Transparent;
-            this.Find.RenderStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(26)))), ((int)(((byte)(120)))), ((int)(((byte)(254)))));
-            this.Find.RenderStyle.SelectionForeColor = System.Drawing.Color.White;
-            this.Find.RenderStyle.SeparatorColor = System.Drawing.Color.Gainsboro;
-            this.Find.RenderStyle.TextRenderingHint = Guna.UI.WinForms.DrawingTextRenderingHint.ClearTypeGridFit;
-            this.Find.Size = new System.Drawing.Size(261, 118);
-            // 
-            // Findid
-            // 
-            this.Findid.Name = "Findid";
-            this.Findid.Size = new System.Drawing.Size(260, 26);
-            this.Findid.Text = "Theo Mã";
-            // 
-            // toolStripTextBox1
-            // 
-            this.toolStripTextBox1.BackColor = System.Drawing.SystemColors.Menu;
-            this.toolStripTextBox1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripTextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox1.Name = "toolStripTextBox1";
-            this.toolStripTextBox1.Overflow = System.Windows.Forms.ToolStripItemOverflow.Never;
-            this.toolStripTextBox1.Size = new System.Drawing.Size(200, 23);
-            // 
-            // toolStripSeparator2
-            // 
-            this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(257, 6);
-            // 
-            // toolStripMenuItem10
-            // 
-            this.toolStripMenuItem10.Name = "toolStripMenuItem10";
-            this.toolStripMenuItem10.Size = new System.Drawing.Size(260, 26);
-            this.toolStripMenuItem10.Text = "Theo Tên";
-            // 
-            // toolStripTextBox2
-            // 
-            this.toolStripTextBox2.BackColor = System.Drawing.SystemColors.Menu;
-            this.toolStripTextBox2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.toolStripTextBox2.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.toolStripTextBox2.Name = "toolStripTextBox2";
-            this.toolStripTextBox2.Size = new System.Drawing.Size(200, 23);
-            // 
-            // toolStripSeparator1
-            // 
-            this.toolStripSeparator1.Name = "toolStripSeparator1";
-            this.toolStripSeparator1.Size = new System.Drawing.Size(257, 6);
-            // 
             // btnThemSanPham
             // 
             this.btnThemSanPham.Image = ((System.Drawing.Image)(resources.GetObject("btnThemSanPham.Image")));
@@ -1557,9 +1435,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanel1)).EndInit();
             this.flyoutPanel1.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.flyoutPanelControl1)).EndInit();
-            this.Loc.ResumeLayout(false);
-            this.Find.ResumeLayout(false);
-            this.Find.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.behaviorManager1)).EndInit();
             this.ThemMoi.ResumeLayout(false);
             this.Import.ResumeLayout(false);
@@ -1615,11 +1490,6 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label lbProduct;
         private System.Windows.Forms.Label label1;
-        private Guna.UI.WinForms.GunaContextMenuStrip Loc;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem4;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem5;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem6;
-        private Guna.UI.WinForms.GunaContextMenuStrip Find;
         private System.Windows.Forms.Panel panel5;
         private DevExpress.Utils.Behaviors.BehaviorManager behaviorManager1;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel2;
@@ -1659,12 +1529,6 @@
         private Guna.UI.WinForms.GunaContextMenuStrip Import;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem7;
         private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem8;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox1;
-        private System.Windows.Forms.ToolStripMenuItem Findid;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator2;
-        private System.Windows.Forms.ToolStripMenuItem toolStripMenuItem10;
-        private System.Windows.Forms.ToolStripTextBox toolStripTextBox2;
-        private System.Windows.Forms.ToolStripSeparator toolStripSeparator1;
         private Guna.UI2.WinForms.Guna2TextBox txtSearch;
         private Guna.UI.WinForms.GunaDataGridView dgvMotorcycles;
         private Guna.UI.WinForms.GunaPanel pnbtn;

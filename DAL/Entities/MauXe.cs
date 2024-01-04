@@ -30,9 +30,9 @@ namespace DAL.Entities
         [StringLength(20)]
         public string LOAICON { get; set; }
 
-        public decimal GIANHAP { get; set; }
+        public double GIANHAP { get; set; }
 
-        public decimal GIABAN { get; set; }
+        public double GIABAN { get; set; }
 
         public int SOLUONG { get; set; }
 

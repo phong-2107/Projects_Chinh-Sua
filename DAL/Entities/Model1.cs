@@ -24,6 +24,7 @@ namespace DAL.Entities
         public virtual DbSet<NhaCungCap> NhaCungCaps { get; set; }
         public virtual DbSet<NhanVien> NhanViens { get; set; }
         public virtual DbSet<PhieuNhap> PhieuNhaps { get; set; }
+        public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
         public virtual DbSet<TaiKhoanLogin> TaiKhoanLogins { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
@@ -87,10 +88,6 @@ namespace DAL.Entities
                 .Property(e => e.IDPHIEUNHAP)
                 .IsFixedLength();
 
-            modelBuilder.Entity<CT_PNhap>()
-                .Property(e => e.TONGGT)
-                .HasPrecision(18, 0);
-
             modelBuilder.Entity<HangSX>()
                 .Property(e => e.IDHANGSX)
                 .IsFixedLength();
@@ -111,10 +108,6 @@ namespace DAL.Entities
             modelBuilder.Entity<HopDong>()
                 .Property(e => e.IDKH)
                 .IsFixedLength();
-
-            modelBuilder.Entity<HopDong>()
-                .Property(e => e.TONGTT)
-                .HasPrecision(18, 0);
 
             modelBuilder.Entity<HopDong>()
                 .HasMany(e => e.CT_HOPDONG)
@@ -146,14 +139,6 @@ namespace DAL.Entities
             modelBuilder.Entity<MauXe>()
                 .Property(e => e.IDMAUXE)
                 .IsFixedLength();
-
-            modelBuilder.Entity<MauXe>()
-                .Property(e => e.GIANHAP)
-                .HasPrecision(18, 0);
-
-            modelBuilder.Entity<MauXe>()
-                .Property(e => e.GIABAN)
-                .HasPrecision(18, 0);
 
             modelBuilder.Entity<MauXe>()
                 .Property(e => e.IDNCC)
@@ -211,10 +196,6 @@ namespace DAL.Entities
             modelBuilder.Entity<PhieuNhap>()
                 .Property(e => e.IDNCC)
                 .IsFixedLength();
-
-            modelBuilder.Entity<PhieuNhap>()
-                .Property(e => e.TONGHOADON)
-                .HasPrecision(18, 0);
 
             modelBuilder.Entity<PhieuNhap>()
                 .HasMany(e => e.CT_MauXe)

@@ -10,12 +10,11 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class FormMapKho : Form
+    public partial class FormPhieuNhap : Form
     {
-        public FormMapKho()
+        public FormPhieuNhap()
         {
             InitializeComponent();
         }
-        
     }
 }

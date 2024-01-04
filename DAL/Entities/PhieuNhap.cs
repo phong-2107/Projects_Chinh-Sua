@@ -29,7 +29,7 @@ namespace DAL.Entities
         [StringLength(10)]
         public string IDNCC { get; set; }
 
-        public decimal? TONGHOADON { get; set; }
+        public double? TONGHOADON { get; set; }
 
         [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
         public virtual ICollection<CT_MauXe> CT_MauXe { get; set; }
